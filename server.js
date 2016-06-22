@@ -3,7 +3,6 @@ var app = express();
 var habitat = require('habitat');
 var request = require('request');
 var jsonfile = require('jsonfile');
-var jsonFormat = require('json-format');
 
 // load env vars from .env file
 habitat.load('./.env');
