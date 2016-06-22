@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Docs Analyzer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.0.0.min.js"
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+    <script src="http://johannburkard.de/resources/Johann/jquery.highlight-5.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="search-container" class="main-containers">
+        <div class="inner">
+          <div id="search-result">
+            <div>
+              <span class="num-found">0</span> matches found. <a id="reset">RESET</a>
+            </div>
+          </div>
+          <div id="search"></div>
+        </div>
+        <a href="/wordcloud" class="nav">♥ Word Cloud ♥</a>
+      </div>
+
+      <div id="etherpads-container" class="main-containers">
+        <div id="etherpad-result">
+          <div>
+            <h1>Hello there :D</h1>
+            <span class="num-found">0</span> Etherpads shown.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/template" class="keyphrases-template">
+      <ul>
+      <% _.each( theFiveIssues, function( issue ){ %>
+      <li class="issue">
+        <h3><%= issue.name %></h3>
+        <% _.each( issue.keyphrases, function( keyphrase ){ %>
+        <div class="keyphrase"><%= keyphrase %></div>
+        <% }); %>
+      </li>
+      <% }); %>
+    </script>
+
+    <script type="text/template" class="etherpads-template">
+      <ul>
+      <% _.each( listItems, function( listItem ){ %>
+      <li class="etherpad">
+        <h3>SOURCE: <a href="<%= listItem.originalUrl %>" target="_blank"><%= listItem.slug %></a></h3>
+        <div class="content">
+        <% if ( listItem.content ){ %>
+          <%= listItem.content.replace(/(\r\n|\n|\r)/gm,"<br/>") %>
+        <% } %>
+        </div>
+      </li>
+      <% }); %>
+      </ul>
+    </script>
+
+    <script>
+      var keyphrasesTemplate = _.template(
+        $( "script.keyphrases-template" ).html()
+      );
+
+      var keyphrasesData = {
+        theFiveIssues: [
+          {
+            name: "Online Privacy & Security",
+            keyphrases: [ "online data", "safe", "protect", "company", "companies", "government", "ownership", "digital identity", "digital identities" ]
+          },
+          {
+            name: "Innovation Open",
+            keyphrases: [ "open source", "open standard", "product", "policy", "policies", "practice", "entrepreneurs", "innovate", "compete", "permission" ]
+          },
+          {
+            name: "Decentralization",
+            keyphrases: [ "technologies", "platforms", "interoperable", "standard", "system", "transfer of information", "content" ]
+          },
+          {
+            name: "Web Literacy",
+            keyphrases: [ "skills", "read", "write", "participate", "digital citizen", "consuming content", "creating" ]
+          },
+          {
+            name: "Digital Inclusion",
+            keyphrases: [ "access", "opportunity", "participate", "diversity" ]
+          }
+        ]
+      };
+      $("#search").html( keyphrasesTemplate(keyphrasesData) );
+      console.log(keyphrasesData);
+    </script>
+
+    <script>
+      var template = _.template(
+        $( "script.etherpads-template" ).html()
+      );
+
+      $.ajax({
+        url: "etherpads.json"
+      })
+      .done(function(response) {
+        var templateData = {
+          listItems: response
+        };
+        $("#etherpad-result").after( template(templateData) );
+        $("#etherpad-result .num-found").text($(".etherpad:visible").length);
+        $(".keyphrase").on("click", highlighter);
+
+      });
+
+      var highlighter = function(event) {
+        var selectedPhrase = event.target.innerText;
+        // clear previously highlighted
+        $(".keyphrase.active").removeClass("active");
+        $(".etherpad").removeHighlight();
+        // highlight new keyphrase
+        $(".etherpad").highlight(selectedPhrase);
+        $(event.target).addClass("active");
+        // hide etherpads with no match
+        $(".etherpad").hide();
+        $(".highlight").parents(".etherpad").show();
+        // update num of matches
+        $("#search-result .num-found").text($(".highlight").length);
+        $("#etherpad-result .num-found").text($(".etherpad:visible").length);
+      }
+
+      $("#reset").on('click', function() {
+        $(".keyphrase.active").removeClass("active");
+        $(".etherpad").removeHighlight();
+        $(".etherpad").show();
+        $("#search-result .num-found").text($(".highlight").length);
+        $("#etherpad-result .num-found").text($(".etherpad:visible").length);
+      });
+    </script>
+  </body>
+</html>

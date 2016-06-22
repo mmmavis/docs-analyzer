@@ -1,0 +1,45 @@
+{
+  "name": "docs-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "^5.0.0",
+    "npm": "^3.0.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm run build && npm run copy-d3-cloud",
+    "start": "npm-run-all --parallel start-server watch",
+    "start-server": "node server.js",
+    "build": "npm run build:scss",
+    "build:scss": "node-sass scss/style.scss public/style.css && postcss --use autoprefixer --autoprefixer.browsers 'last 3 versions' -o public/style.css public/style.css",
+    "watch": "npm run watch:scss",
+    "watch:scss": "chokidar 'scss/**/*' -c 'npm run build:scss'",
+    "copy-d3-cloud": "cp node_modules/d3-cloud/build/d3.layout.cloud.js public/d3.layout.cloud.js",
+    "test": "npm-run-all test:**",
+    "test:scss": "stylelint 'app/**/*.scss' --syntax scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmmavis/docs-analyzer.git"
+  },
+  "author": "Mavis Ou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmmavis/docs-analyzer/issues"
+  },
+  "homepage": "https://github.com/mmmavis/docs-analyzer#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "chokidar": "^1.5.2",
+    "chokidar-cli": "^1.2.0",
+    "d3-cloud": "^1.2.1",
+    "express": "^4.14.0",
+    "habitat": "^3.1.2",
+    "jsonfile": "^2.3.1",
+    "node-sass": "^3.8.0",
+    "npm-run-all": "^2.2.0",
+    "postcss-cli-simple": "^1.0.1",
+    "request": "^2.72.0"
+  }
+}

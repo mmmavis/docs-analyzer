@@ -1,0 +1,95 @@
+html {
+  margin: 0;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 20px; }
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0; }
+
+h1 {
+  margin-top: 0; }
+
+.nav {
+  color: #08AFCF;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem; }
+  .nav:hover {
+    color: #FF1660; }
+
+.highlight {
+  background: yellow; }
+
+#wrapper {
+  overflow: hidden; }
+
+.main-containers {
+  padding: 2rem; }
+
+#search-container {
+  background: #DDD;
+  position: fixed;
+  width: 550px; }
+
+#etherpads-container {
+  width: calc(100% - 600px);
+  margin-left: 600px;
+  padding-top: 0; }
+
+#search-result {
+  color: #ED139E; }
+
+#reset {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 0px 5px;
+  border-radius: 3px;
+  color: #000;
+  cursor: pointer; }
+  #reset:hover {
+    background: #000;
+    color: #fff; }
+
+#search h3 {
+  margin: 1rem 0 .5rem 0; }
+
+#search .keyphrase {
+  display: inline-block;
+  background: #fff;
+  margin: 0 3px 5px 0;
+  padding: 2px 5px;
+  border-radius: 3px;
+  cursor: pointer; }
+  #search .keyphrase.active, #search .keyphrase:hover {
+    color: #fff;
+    background: #555; }
+
+#etherpad-result {
+  text-align: right;
+  margin-right: 30px; }
+
+.etherpad {
+  padding: 2rem; }
+  .etherpad h3 {
+    padding: .5rem 1rem;
+    background: black;
+    margin-top: 0;
+    color: #ccc;
+    border-radius: 3px; }
+    .etherpad h3 a {
+      color: white;
+      margin-left: 1rem; }
+      .etherpad h3 a:hover {
+        color: #08AFCF; }
+  .etherpad .content {
+    margin-left: 30px; }
+
+#word-cloud-container {
+  margin: 0 auto;
+  width: 1000px; }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Docs Analyzer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.0.0.min.js"
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+    <script src="d3.layout.cloud.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="word-cloud-container" class="main-containers">
+        <div id="cloud"></div>
+      </div>
+    </div>
+
+    <script>
+      $.ajax({
+        url: "word_map.json"
+      })
+      .done(function(response) {
+        var data = Object.keys(response).map(function(word) {
+          return { text: word, size: response[word] };
+        }).filter(function(obj) {
+          return obj.size > 20
+        });
+        // generateWordCloud();
+        console.log(data);
+        calculateCloud(data);
+      });
+
+      // from https://www.pubnub.com/blog/2014-10-09-quick-word-cloud-from-a-chatroom-with-d3js/
+      function calculateCloud(data) {
+        d3.layout.cloud()
+          .size([1000, 1000])
+          .words(data) // data from PubNub
+          .rotate(function() { return ~~(Math.random()*2) * 90;}) // 0 or 90deg
+          .fontSize(function(d) { return d.size; })
+          .on('end', drawCloud)
+          .start();
+      }
+      function drawCloud(words) {
+        d3.select('#cloud').append('svg')
+          .attr('width', 1000).attr('height', 1000)
+          .attr("viewBox", "-500 -500 1500 1500")
+          .append('g')
+          .selectAll('text')
+          .data(words)
+          .enter().append('text')
+          .style('font-size', function(d) { return d.size + 'px'; })
+          .style('font-family', function(d) { return d.font; })
+          .style('fill', function(d, i) { 
+            return randomColor({
+               luminosity: 'random',
+               hue: 'random'
+            }); 
+          })
+          // .style('fill', function(d, i) { return "black"; })
+          .attr('text-anchor', 'middle')
+          .attr('transform', function(d) {
+            return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')';
+          })
+          .text(function(d) { return d.text; });
+      }
+    </script>
+  </body>
+</html>
