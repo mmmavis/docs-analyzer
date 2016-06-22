@@ -21,14 +21,26 @@
     </div>
 
     <script>
+      var wordsToSkip = [
+        "to",
+        "the",
+        "and",
+        "of",
+        "a",
+        "an",
+        "for",
+        "in",
+        "this",
+        "that",
+        "is",
+        "are"
+      ];
       $.ajax({
         url: "word_map.json"
       })
       .done(function(response) {
-        var data = Object.keys(response).map(function(word) {
-          return { text: word, size: response[word] };
-        }).filter(function(obj) {
-          return obj.size > 20
+        var data = response.filter(function(obj) {
+          return obj.size > 20 && wordsToSkip.indexOf(obj.text) < 0
         });
         // generateWordCloud();
         console.log(data);
@@ -47,8 +59,8 @@
       }
       function drawCloud(words) {
         d3.select('#cloud').append('svg')
-          .attr('width', 1000).attr('height', 1000)
-          .attr("viewBox", "-500 -500 1500 1500")
+          .attr('width', 1000).attr('height', 600)
+          .attr("viewBox", "0 -450 300 800")
           .append('g')
           .selectAll('text')
           .data(words)

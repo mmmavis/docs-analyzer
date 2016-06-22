@@ -3,6 +3,8 @@ var app = express();
 var habitat = require('habitat');
 var request = require('request');
 var jsonfile = require('jsonfile');
+var _ = require('underscore');
+var schedule = require('node-schedule');
 
 // load env vars from .env file
 habitat.load('./.env');
@@ -63,7 +65,7 @@ function generateJson(list) {
       counter++;
       if ( counter == list.length ) {
         jsonfile.writeFile(ETHERPADS_FILENAME, etherpads, {spaces: 4}, function (err) {
-          console.error(err)
+          if (err) console.error(err)
         });
         generateWordCount();
       }
@@ -83,12 +85,24 @@ function generateWordCount() {
       wordMap[word]++;
     }
   });
-  jsonfile.writeFile(WORD_MAP_FILENAME, wordMap, {spaces: 4}, function (err) {
-    console.error(err)
+  var wordArray = [];
+  Object.keys(wordMap).map(function(word) {
+    wordArray.push({ text: word, size: wordMap[word] });
+  });
+  // sort 
+  wordArray = _.sortBy(wordArray, 'size').reverse();
+
+  jsonfile.writeFile(WORD_MAP_FILENAME, wordArray, {spaces: 4}, function (err) {
+    if (err) console.error(err)
   });
 }
 
 generateJson(ETHERPAD_SLUGS);
+
+// run every 10 mins
+var recurringTask = schedule.scheduleJob('*/10 * * * *', function(){
+});
+
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
