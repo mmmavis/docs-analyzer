@@ -1,0 +1,19 @@
+.page.home {
+  margin: 20px;
+}
+
+#search {
+  h3 {
+    margin: 1rem 0 .5rem 0;
+  }
+  .keyphrase {
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    &.active,
+    &:hover {
+      color: #fff;
+      background: #555;
+    }
+  }
+}

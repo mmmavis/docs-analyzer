@@ -11,75 +11,83 @@
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
     <script src="d3.layout.cloud.js" type="text/javascript"></script>
+    <!-- https://github.com/davidmerfield/randomColor -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js" type="text/javascript"></script>
+    <script src="js/word_cloud.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="page word-cloud">
     <div id="wrapper">
+      <div id="word-cloud-nav">
+      </div>
       <div id="word-cloud-container" class="main-containers">
         <div id="cloud"></div>
       </div>
     </div>
 
+     <script type="text/template" class="cloud-nav-template">
+      <ul>
+        <% _.each( categories, function( category ){ %>
+        <li>
+          <h3><%= category.name %></h3>
+          <div class="keyphrases">
+            <% _.each( category.keyphrases, function( keyphrase ){ %>
+            <div class="keyphrase"><%= keyphrase %></div>
+            <% }); %>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
+    </script>
+
     <script>
-      var wordsToSkip = [
-        "to",
-        "the",
-        "and",
-        "of",
-        "a",
-        "an",
-        "for",
-        "in",
-        "this",
-        "that",
-        "is",
-        "are"
-      ];
-      $.ajax({
-        url: "word_map.json"
+      var cloudNavTemplate = _.template(
+        $( "script.cloud-nav-template" ).html()
+      );
+      var cloudNavData = {
+        categories: [
+          {
+            name: "platforms / issues / programs",
+            keyphrases: [ "Google", "Github", "gh", "chat", "etherpad", "discourse", "arduino", "slack", "youtube", "twitter", "makey", "literacy", "mln", "clubs", "wow", "iot", "inclusive" ]
+          },
+          {
+            name: "people / distributed leadership",
+            keyphrases: [ "members", "participants", "communities", "cohort", "users", "attendees", "students", "wranglers", "leaders", "captains", "follows", "coordinators", "partners", "facilitators", "mentors", "educators", "reserachers" ]
+          },
+          {
+            name: "work together",
+            keyphrases: [ "network", "networks", "connect", "connection", "feedback", "convening", "collaborate", "coordinate", "inviting", "interveiws", "pluse", "mentorship", "proposals", "takeaway", "onboarding", "practice", "roles", "consulted", "darci", "lessons", "metrics", "goals", "norming", "decider", "template", "accountable" ]
+          },
+          {
+            name: "communication",
+            keyphrases: [ "shared", "sharing", "emial", "blog", "comms", "engaging", "conversations", "tweet", "emails", "documentation", "demystify", "+1", "guaranteed", "awesome", "gratitude", "excited", "opportnities", "yay" ]
+          },
+          {
+            name: "the work continues",
+            keyphrases: [ "challenges", "tbd" ]
+          }
+        ]
+      };
+      cloudNavData.categories.unshift({
+        name: "everything",
+        keyphrases: [ "all words" ]
       })
-      .done(function(response) {
-        var data = response.filter(function(obj) {
-          return obj.size > 20 && wordsToSkip.indexOf(obj.text) < 0
-        });
-        // generateWordCloud();
-        console.log(data);
-        calculateCloud(data);
+
+      $("#word-cloud-nav").html( cloudNavTemplate(cloudNavData) );
+
+      $("#word-cloud-nav h3").on("click", function() {
+        var options = {};
+        $("#word-cloud-nav h3").removeClass("active");
+        $(this).addClass("active");
+
+        var index = $("#word-cloud-nav h3").index($(this));
+        if ( index == 0 ) {
+          makeCloud(options,5);
+        } else {
+          options.wordsToInclude = cloudNavData.categories[index].keyphrases;
+          makeCloud(options,0);
+        }
       });
 
-      // from https://www.pubnub.com/blog/2014-10-09-quick-word-cloud-from-a-chatroom-with-d3js/
-      function calculateCloud(data) {
-        d3.layout.cloud()
-          .size([1000, 1000])
-          .words(data) // data from PubNub
-          .rotate(function() { return ~~(Math.random()*2) * 90;}) // 0 or 90deg
-          .fontSize(function(d) { return d.size; })
-          .on('end', drawCloud)
-          .start();
-      }
-      function drawCloud(words) {
-        d3.select('#cloud').append('svg')
-          .attr('width', 1000).attr('height', 600)
-          .attr("viewBox", "0 -450 300 800")
-          .append('g')
-          .selectAll('text')
-          .data(words)
-          .enter().append('text')
-          .style('font-size', function(d) { return d.size + 'px'; })
-          .style('font-family', function(d) { return d.font; })
-          .style('fill', function(d, i) { 
-            return randomColor({
-               luminosity: 'random',
-               hue: 'random'
-            }); 
-          })
-          // .style('fill', function(d, i) { return "black"; })
-          .attr('text-anchor', 'middle')
-          .attr('transform', function(d) {
-            return 'translate(' + [d.x, d.y] + ')rotate(' + d.rotate + ')';
-          })
-          .text(function(d) { return d.text; });
-      }
     </script>
   </body>
 </html>

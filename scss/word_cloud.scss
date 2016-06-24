@@ -1,0 +1,51 @@
+#word-cloud-nav,
+#word-cloud-container {
+  float: left;
+}
+
+
+#word-cloud-nav {
+  width: 350px;
+  margin-right: 3rem;
+  ul {
+    li {
+      h3,
+      .keyphrases {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      h3 {
+        background: $black;
+        color: $white;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+      }
+      h3 + div {
+        max-height: 0;
+        overflow: hidden;
+      }
+      h3.active + div {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        max-height: 1000px;
+        transition: max-height .5s ease-in;
+      }
+    }
+    @for $i from 1 through 40{
+      li:nth-child(#{$i}) h3 { 
+        background: adjust-hue($orange, $i*6);
+        &:hover {
+          background: $black;
+        }
+      }
+    } 
+  }
+}
+
+#word-cloud-container {
+  margin: 2rem auto;
+  width: auto;
+}

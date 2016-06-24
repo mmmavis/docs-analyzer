@@ -5,14 +5,15 @@ var request = require('request');
 var jsonfile = require('jsonfile');
 var _ = require('underscore');
 var schedule = require('node-schedule');
+var tm = require('text-miner');
 
 // load env vars from .env file
 habitat.load('./.env');
 var env = new habitat('', { port: 3000 });
 var PORT = env.get('port');
 
-var ETHERPADS_FILENAME = 'public/etherpads.json';
-var WORD_MAP_FILENAME = 'public/word_map.json';
+var ETHERPADS_FILENAME = 'public/data/etherpads.json';
+var WORD_MAP_FILENAME = 'public/data/word_map.json';
 
 // app configs
 app.use(express.static('public'));
@@ -65,35 +66,39 @@ function generateJson(list) {
       counter++;
       if ( counter == list.length ) {
         jsonfile.writeFile(ETHERPADS_FILENAME, etherpads, {spaces: 4}, function (err) {
-          if (err) console.error(err)
+          if (err) console.error(err);
+          console.log("[Updated] " + ETHERPADS_FILENAME);
         });
-        generateWordCount();
+        generateWordCount(function() {
+          console.log("[Updated] " + WORD_MAP_FILENAME);
+        });
       }
     });
   });
 }
 
-function generateWordCount() {
-  var words = etherpads.map(function(etherpad) {
-    return etherpad.content.replace(/(\r\n|\n|\r|\t)/gm," ");
-  }).join(" ").split(" ");
-  var wordMap = {};
-  words.forEach(function(word) {
-    if ( !wordMap[word] ) {
-      wordMap[word] = 1;
-    } else {
-      wordMap[word]++;
-    }
+function generateWordCount(callback) {
+  var rawEtherpadContent = etherpads.map(function(etherpad){
+    return etherpad.content.replace(/(\r\n|\n|\r|\t)/gm," ")
+                           .replace(/\,/g, " ")
+                           .replace(/\!/g, " ")
+                           .replace(/\?/g, " ")
+                           .replace(/\(/g, " ")
+                           .replace(/\)/g, " ");
   });
-  var wordArray = [];
-  Object.keys(wordMap).map(function(word) {
-    wordArray.push({ text: word, size: wordMap[word] });
-  });
-  // sort 
-  wordArray = _.sortBy(wordArray, 'size').reverse();
 
-  jsonfile.writeFile(WORD_MAP_FILENAME, wordArray, {spaces: 4}, function (err) {
-    if (err) console.error(err)
+  var my_corpus = new tm.Corpus(rawEtherpadContent);
+  var terms = new tm.Terms(my_corpus);
+  var termsArray = terms.findFreqTerms(0).map(function(term) {
+    return { text: term.word, size: term.count };
+  }).filter(function(term) {
+    return tm.STOPWORDS.EN.indexOf(term.text) < 0 && term.text[term.text.length-1] != ".";
+  });
+  termsArray = _.sortBy(termsArray, 'size').reverse();
+
+  jsonfile.writeFile(WORD_MAP_FILENAME, termsArray, {spaces: 4}, function (err) {
+    if (err) console.error(err);
+    callback();
   });
 }
 
@@ -101,6 +106,7 @@ generateJson(ETHERPAD_SLUGS);
 
 // run every 10 mins
 var recurringTask = schedule.scheduleJob('*/10 * * * *', function(){
+  generateJson(ETHERPAD_SLUGS);
 });
 
 
@@ -109,6 +115,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/wordcloud', function (req, res) {
+  res.redirect('/word_cloud');
+});
+
+app.get('/word_cloud', function (req, res) {
   res.sendFile(__dirname + '/word_cloud.html');
 });
 

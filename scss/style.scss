@@ -1,4 +1,6 @@
-$blue-link: #08AFCF;
+@import 'variables.scss';
+@import 'home.scss';
+@import 'word_cloud.scss';
 
 html {
   margin: 0;
@@ -8,7 +10,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
-  margin: 20px;
+  margin: 0;
 }
 
 ul {
@@ -83,19 +85,12 @@ h1 {
   h3 {
     margin: 1rem 0 .5rem 0;
   }
-  .keyphrase {
-    display: inline-block;
-    background: #fff;
-    margin: 0 3px 5px 0;
-    padding: 2px 5px;
-    border-radius: 3px;
-    cursor: pointer;
-    &.active,
-    &:hover {
-      color: #fff;
-      background: #555;
-    }
-  }
+}
+
+.keyphrase {
+  display: inline-block;
+  margin: 0 3px 5px 0;
+  padding: 2px 5px;
 }
 
 #etherpad-result {
@@ -110,12 +105,12 @@ h1 {
   // }
   h3 {
     padding: .5rem 1rem;
-    background: black;
+    background: $black;
     margin-top: 0;
     color: #ccc;
     border-radius: 3px;
     a {
-      color: white;
+      color: $white;
       margin-left: 1rem;
       &:hover {
         color: $blue-link;
@@ -125,9 +120,4 @@ h1 {
   .content {
     margin-left: 30px;
   }
-}
-
-#word-cloud-container {
-  margin: 0 auto;
-  width: 1000px;
 }
