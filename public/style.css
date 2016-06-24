@@ -1,7 +1,9 @@
+.page.home footer {
+  color: #ffd8cc; }
+
 #search-container {
   background: #333;
   position: fixed;
-  top: 40px;
   width: 550px;
   height: 100%;
   color: #fff; }
@@ -260,7 +262,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0; }
 
 ul {
@@ -303,8 +305,13 @@ nav {
     nav a:hover {
       color: #3FB8AF; }
 
+footer {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem; }
+
 #main {
-  padding-top: 42px; }
+  padding-top: 3.8rem; }
 
 .main-containers {
   padding: 2rem; }

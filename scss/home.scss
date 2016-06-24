@@ -1,7 +1,12 @@
+.page.home {
+  footer {
+    color: lighten($orange, 40);
+  }
+}
+
 #search-container {
   background: #333;
   position: fixed;
-  top: 40px;
   width: 550px;
   height: 100%;
   color: $white;

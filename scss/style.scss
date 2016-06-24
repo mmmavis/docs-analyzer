@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0;
 }
 
@@ -68,8 +68,14 @@ nav {
   }
 }
 
+footer {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
 #main {
-  padding-top: 42px;
+  padding-top: 3.8rem;
 }
 
 .main-containers {

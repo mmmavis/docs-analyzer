@@ -48,12 +48,16 @@ function getPadContent(slug,callback) {
   request.get(
     originalUrl + "/export/txt",
     function(err, response) {
-      var obj = {
-        slug: slug,
-        originalUrl: originalUrl,
-        content: response.body
+      try {
+        var obj = {
+          slug: slug,
+          originalUrl: originalUrl,
+          content: response.body
+        }
+        etherpads.push(obj);
+      } catch(e) {
+
       }
-      etherpads.push(obj);
       callback();
     }
   );

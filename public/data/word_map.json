@@ -1,79 +1,79 @@
 [
     {
         "text": "",
-        "size": 5163
+        "size": 5444
     },
     {
         "text": "*",
-        "size": 1358
+        "size": 1434
     },
     {
         "text": "-",
-        "size": 209
+        "size": 213
     },
     {
         "text": "Mozilla",
-        "size": 96
+        "size": 98
     },
     {
         "text": "MozFest",
-        "size": 90
+        "size": 93
     },
     {
         "text": "I",
-        "size": 72
-    },
-    {
-        "text": "/",
-        "size": 71
+        "size": 78
     },
     {
         "text": "space",
-        "size": 70
+        "size": 73
+    },
+    {
+        "text": "/",
+        "size": 73
     },
     {
         "text": "people",
+        "size": 72
+    },
+    {
+        "text": "&",
         "size": 70
     },
     {
         "text": "community",
-        "size": 65
-    },
-    {
-        "text": "&",
-        "size": 64
+        "size": 67
     },
     {
         "text": "What",
-        "size": 58
-    },
-    {
-        "text": "How",
-        "size": 56
+        "size": 66
     },
     {
         "text": "min",
-        "size": 54
+        "size": 60
     },
     {
-        "text": "Learning",
-        "size": 53
-    },
-    {
-        "text": "work",
-        "size": 51
-    },
-    {
-        "text": "–",
-        "size": 48
+        "text": "How",
+        "size": 60
     },
     {
         "text": "web",
-        "size": 48
+        "size": 56
+    },
+    {
+        "text": "Learning",
+        "size": 55
+    },
+    {
+        "text": "work",
+        "size": 54
+    },
+    {
+        "text": "–",
+        "size": 51
     },
     {
         "text": "team",
-        "size": 42
+        "size": 47
     },
     {
         "text": "+",
@@ -81,34 +81,54 @@
     },
     {
         "text": "+1",
+        "size": 38
+    },
+    {
+        "text": "Community",
         "size": 36
     },
     {
         "text": "We",
-        "size": 32
-    },
-    {
-        "text": "Community",
-        "size": 32
+        "size": 34
     },
     {
         "text": "call",
-        "size": 30
-    },
-    {
-        "text": "make",
-        "size": 28
+        "size": 33
     },
     {
         "text": ":",
-        "size": 28
+        "size": 32
     },
     {
         "text": "10",
+        "size": 32
+    },
+    {
+        "text": "make",
+        "size": 30
+    },
+    {
+        "text": "open",
         "size": 28
     },
     {
+        "text": "learning",
+        "size": 28
+    },
+    {
+        "text": "design",
+        "size": 28
+    },
+    {
+        "text": "5",
+        "size": 27
+    },
+    {
         "text": "staff",
+        "size": 26
+    },
+    {
+        "text": "literacy",
         "size": 26
     },
     {
@@ -116,27 +136,23 @@
         "size": 26
     },
     {
+        "text": "good",
+        "size": 26
+    },
+    {
+        "text": "Robert",
+        "size": 26
+    },
+    {
         "text": "sessions",
         "size": 25
     },
     {
-        "text": "open",
+        "text": "group",
         "size": 25
     },
     {
-        "text": "learning",
-        "size": 25
-    },
-    {
-        "text": "good",
-        "size": 25
-    },
-    {
-        "text": "Robert",
-        "size": 25
-    },
-    {
-        "text": "5",
+        "text": "June",
         "size": 25
     },
     {
@@ -144,7 +160,11 @@
         "size": 24
     },
     {
-        "text": "design",
+        "text": "session",
+        "size": 24
+    },
+    {
+        "text": "Call",
         "size": 24
     },
     {
@@ -152,27 +172,15 @@
         "size": 23
     },
     {
-        "text": "literacy",
-        "size": 23
-    },
-    {
-        "text": "group",
-        "size": 23
-    },
-    {
-        "text": "June",
-        "size": 23
-    },
-    {
-        "text": "session",
-        "size": 22
-    },
-    {
         "text": "proposals",
         "size": 22
     },
     {
         "text": "projects",
+        "size": 22
+    },
+    {
+        "text": "ideas",
         "size": 22
     },
     {
@@ -208,6 +216,10 @@
         "size": 20
     },
     {
+        "text": "event",
+        "size": 20
+    },
+    {
         "text": "data",
         "size": 20
     },
@@ -220,6 +232,10 @@
         "size": 20
     },
     {
+        "text": "London",
+        "size": 20
+    },
+    {
         "text": "stories",
         "size": 19
     },
@@ -228,7 +244,7 @@
         "size": 19
     },
     {
-        "text": "ideas",
+        "text": "love",
         "size": 19
     },
     {
@@ -236,11 +252,7 @@
         "size": 19
     },
     {
-        "text": "event",
-        "size": 19
-    },
-    {
-        "text": "London",
+        "text": "This",
         "size": 19
     },
     {
@@ -248,7 +260,15 @@
         "size": 19
     },
     {
-        "text": "love",
+        "text": "A",
+        "size": 19
+    },
+    {
+        "text": "things",
+        "size": 18
+    },
+    {
+        "text": "members",
         "size": 18
     },
     {
@@ -256,19 +276,31 @@
         "size": 18
     },
     {
-        "text": "This",
+        "text": "connect",
         "size": 18
     },
     {
-        "text": "A",
+        "text": "Who",
         "size": 18
     },
     {
-        "text": "things",
+        "text": "What's",
+        "size": 18
+    },
+    {
+        "text": "I'm",
+        "size": 18
+    },
+    {
+        "text": "set",
         "size": 17
     },
     {
-        "text": "members",
+        "text": "plan",
+        "size": 17
+    },
+    {
+        "text": "part",
         "size": 17
     },
     {
@@ -280,24 +312,20 @@
         "size": 17
     },
     {
-        "text": "connect",
-        "size": 17
-    },
-    {
-        "text": "Who",
-        "size": 17
-    },
-    {
         "text": "Science",
         "size": 17
     },
     {
-        "text": "Call",
+        "text": "Review",
         "size": 17
     },
     {
         "text": "2016",
         "size": 17
+    },
+    {
+        "text": "support",
+        "size": 16
     },
     {
         "text": "spaces",
@@ -312,15 +340,11 @@
         "size": 16
     },
     {
-        "text": "plan",
-        "size": 16
-    },
-    {
-        "text": "part",
-        "size": 16
-    },
-    {
         "text": "issues",
+        "size": 16
+    },
+    {
+        "text": "folks",
         "size": 16
     },
     {
@@ -328,7 +352,15 @@
         "size": 16
     },
     {
+        "text": "awesome",
+        "size": 16
+    },
+    {
         "text": "add",
+        "size": 16
+    },
+    {
+        "text": "Workshop",
         "size": 16
     },
     {
@@ -336,15 +368,7 @@
         "size": 16
     },
     {
-        "text": "support",
-        "size": 15
-    },
-    {
         "text": "story",
-        "size": 15
-    },
-    {
-        "text": "set",
         "size": 15
     },
     {
@@ -356,7 +380,11 @@
         "size": 15
     },
     {
-        "text": "folks",
+        "text": "participants",
+        "size": 15
+    },
+    {
+        "text": "feedback",
         "size": 15
     },
     {
@@ -364,7 +392,7 @@
         "size": 15
     },
     {
-        "text": "awesome",
+        "text": "audience",
         "size": 15
     },
     {
@@ -372,23 +400,15 @@
         "size": 15
     },
     {
-        "text": "Workshop",
-        "size": 15
-    },
-    {
-        "text": "What's",
-        "size": 15
-    },
-    {
         "text": "Web",
         "size": 15
     },
     {
-        "text": "Review",
+        "text": "Simeon",
         "size": 15
     },
     {
-        "text": "I'm",
+        "text": "Kim",
         "size": 15
     },
     {
@@ -404,15 +424,23 @@
         "size": 14
     },
     {
+        "text": "week",
+        "size": 14
+    },
+    {
         "text": "strategy",
         "size": 14
     },
     {
-        "text": "participants",
+        "text": "questions",
         "size": 14
     },
     {
-        "text": "feedback",
+        "text": "great",
+        "size": 14
+    },
+    {
+        "text": "give",
         "size": 14
     },
     {
@@ -424,23 +452,19 @@
         "size": 14
     },
     {
-        "text": "audience",
-        "size": 14
-    },
-    {
-        "text": "Simeon",
-        "size": 14
-    },
-    {
         "text": "People",
         "size": 14
     },
     {
-        "text": "Kim",
+        "text": ":D",
         "size": 14
     },
     {
-        "text": "questions",
+        "text": "today",
+        "size": 13
+    },
+    {
+        "text": "platform",
         "size": 13
     },
     {
@@ -448,7 +472,11 @@
         "size": 13
     },
     {
-        "text": "give",
+        "text": "blog",
+        "size": 13
+    },
+    {
+        "text": "Takeaways",
         "size": 13
     },
     {
@@ -460,15 +488,15 @@
         "size": 13
     },
     {
-        "text": ":D",
-        "size": 13
-    },
-    {
-        "text": "platform",
+        "text": "shared",
         "size": 12
     },
     {
-        "text": "great",
+        "text": "hope",
+        "size": 12
+    },
+    {
+        "text": "email",
         "size": 12
     },
     {
@@ -480,7 +508,23 @@
         "size": 12
     },
     {
+        "text": "Team",
+        "size": 12
+    },
+    {
         "text": "Network",
+        "size": 12
+    },
+    {
+        "text": "If",
+        "size": 12
+    },
+    {
+        "text": "Curriculum",
+        "size": 12
+    },
+    {
+        "text": "<3",
         "size": 12
     },
     {
@@ -488,7 +532,7 @@
         "size": 12
     },
     {
-        "text": "today",
+        "text": "teaching",
         "size": 11
     },
     {
@@ -496,7 +540,15 @@
         "size": 11
     },
     {
+        "text": "research",
+        "size": 11
+    },
+    {
         "text": "proposal",
+        "size": 11
+    },
+    {
+        "text": "making",
         "size": 11
     },
     {
@@ -512,11 +564,11 @@
         "size": 11
     },
     {
-        "text": "email",
+        "text": "information",
         "size": 11
     },
     {
-        "text": "blog",
+        "text": "idea",
         "size": 11
     },
     {
@@ -528,11 +580,7 @@
         "size": 11
     },
     {
-        "text": "Team",
-        "size": 11
-    },
-    {
-        "text": "Takeaways",
+        "text": "Su",
         "size": 11
     },
     {
@@ -548,23 +596,19 @@
         "size": 11
     },
     {
-        "text": "If",
+        "text": "Closing",
         "size": 11
     },
     {
-        "text": "week",
-        "size": 10
+        "text": ";",
+        "size": 11
     },
     {
         "text": "video",
         "size": 10
     },
     {
-        "text": "shared",
-        "size": 10
-    },
-    {
-        "text": "research",
+        "text": "stuff",
         "size": 10
     },
     {
@@ -580,19 +624,11 @@
         "size": 10
     },
     {
-        "text": "making",
-        "size": 10
-    },
-    {
         "text": "level",
         "size": 10
     },
     {
-        "text": "information",
-        "size": 10
-    },
-    {
-        "text": "hope",
+        "text": "inviting",
         "size": 10
     },
     {
@@ -604,6 +640,14 @@
         "size": 10
     },
     {
+        "text": "excited",
+        "size": 10
+    },
+    {
+        "text": "engagement",
+        "size": 10
+    },
+    {
         "text": "and/or",
         "size": 10
     },
@@ -612,15 +656,19 @@
         "size": 10
     },
     {
-        "text": "Curriculum",
+        "text": "Openings",
+        "size": 10
+    },
+    {
+        "text": "Norming:",
+        "size": 10
+    },
+    {
+        "text": "Chad",
         "size": 10
     },
     {
         "text": "Calls",
-        "size": 10
-    },
-    {
-        "text": ";",
         "size": 10
     },
     {
@@ -632,14 +680,6 @@
         "size": 10
     },
     {
-        "text": "teaching",
-        "size": 9
-    },
-    {
-        "text": "stuff",
-        "size": 9
-    },
-    {
         "text": "study",
         "size": 9
     },
@@ -649,6 +689,10 @@
     },
     {
         "text": "practices",
+        "size": 9
+    },
+    {
+        "text": "post",
         "size": 9
     },
     {
@@ -680,15 +724,11 @@
         "size": 9
     },
     {
+        "text": "individual",
+        "size": 9
+    },
+    {
         "text": "hours",
-        "size": 9
-    },
-    {
-        "text": "excited",
-        "size": 9
-    },
-    {
-        "text": "engagement",
         "size": 9
     },
     {
@@ -705,10 +745,6 @@
     },
     {
         "text": "Working",
-        "size": 9
-    },
-    {
-        "text": "Su",
         "size": 9
     },
     {
@@ -732,7 +768,7 @@
         "size": 9
     },
     {
-        "text": "Closing",
+        "text": "Can",
         "size": 9
     },
     {
@@ -740,7 +776,7 @@
         "size": 9
     },
     {
-        "text": "<3",
+        "text": "15",
         "size": 9
     },
     {
@@ -748,11 +784,23 @@
         "size": 8
     },
     {
+        "text": "tools",
+        "size": 8
+    },
+    {
         "text": "talk",
         "size": 8
     },
     {
+        "text": "sharing",
+        "size": 8
+    },
+    {
         "text": "resources",
+        "size": 8
+    },
+    {
+        "text": "question",
         "size": 8
     },
     {
@@ -784,19 +832,15 @@
         "size": 8
     },
     {
-        "text": "inviting",
-        "size": 8
-    },
-    {
-        "text": "individual",
-        "size": 8
-    },
-    {
-        "text": "idea",
+        "text": "join",
         "size": 8
     },
     {
         "text": "github",
+        "size": 8
+    },
+    {
+        "text": "fun",
         "size": 8
     },
     {
@@ -809,6 +853,10 @@
     },
     {
         "text": "engage",
+        "size": 8
+    },
+    {
+        "text": "connected",
         "size": 8
     },
     {
@@ -832,6 +880,10 @@
         "size": 8
     },
     {
+        "text": "app",
+        "size": 8
+    },
+    {
         "text": "Why",
         "size": 8
     },
@@ -844,7 +896,11 @@
         "size": 8
     },
     {
-        "text": "Openings",
+        "text": "State",
+        "size": 8
+    },
+    {
+        "text": "Project",
         "size": 8
     },
     {
@@ -852,11 +908,19 @@
         "size": 8
     },
     {
-        "text": "Norming:",
+        "text": "Julia",
+        "size": 8
+    },
+    {
+        "text": "IoT",
         "size": 8
     },
     {
         "text": "Hive",
+        "size": 8
+    },
+    {
+        "text": "Gratitude",
         "size": 8
     },
     {
@@ -868,15 +932,11 @@
         "size": 8
     },
     {
-        "text": "Chad",
-        "size": 8
-    },
-    {
-        "text": "Can",
-        "size": 8
-    },
-    {
         "text": "Amira",
+        "size": 8
+    },
+    {
+        "text": "Agenda",
         "size": 8
     },
     {
@@ -884,8 +944,8 @@
         "size": 8
     },
     {
-        "text": "15",
-        "size": 8
+        "text": "usp=sharing",
+        "size": 7
     },
     {
         "text": "users",
@@ -900,10 +960,6 @@
         "size": 7
     },
     {
-        "text": "tools",
-        "size": 7
-    },
-    {
         "text": "thing",
         "size": 7
     },
@@ -912,7 +968,15 @@
         "size": 7
     },
     {
+        "text": "start",
+        "size": 7
+    },
+    {
         "text": "roles",
+        "size": 7
+    },
+    {
+        "text": "rock",
         "size": 7
     },
     {
@@ -920,15 +984,11 @@
         "size": 7
     },
     {
-        "text": "question",
-        "size": 7
-    },
-    {
-        "text": "post",
-        "size": 7
-    },
-    {
         "text": "planning",
+        "size": 7
+    },
+    {
+        "text": "online",
         "size": 7
     },
     {
@@ -940,15 +1000,19 @@
         "size": 7
     },
     {
+        "text": "lots",
+        "size": 7
+    },
+    {
+        "text": "leaving",
+        "size": 7
+    },
+    {
         "text": "learn",
         "size": 7
     },
     {
         "text": "leaders",
-        "size": 7
-    },
-    {
-        "text": "join",
         "size": 7
     },
     {
@@ -972,7 +1036,7 @@
         "size": 7
     },
     {
-        "text": "fun",
+        "text": "garden",
         "size": 7
     },
     {
@@ -992,15 +1056,7 @@
         "size": 7
     },
     {
-        "text": "connected",
-        "size": 7
-    },
-    {
         "text": "collect",
-        "size": 7
-    },
-    {
-        "text": "app",
         "size": 7
     },
     {
@@ -1012,11 +1068,11 @@
         "size": 7
     },
     {
-        "text": "Suggestion:",
+        "text": "Thank",
         "size": 7
     },
     {
-        "text": "State",
+        "text": "Suggestion:",
         "size": 7
     },
     {
@@ -1028,11 +1084,19 @@
         "size": 7
     },
     {
-        "text": "Project",
+        "text": "Proposals",
         "size": 7
     },
     {
         "text": "Notes:",
+        "size": 7
+    },
+    {
+        "text": "Meeting",
+        "size": 7
+    },
+    {
+        "text": "Marina",
         "size": 7
     },
     {
@@ -1045,10 +1109,6 @@
     },
     {
         "text": "July",
-        "size": 7
-    },
-    {
-        "text": "Gratitude",
         "size": 7
     },
     {
@@ -1084,15 +1144,15 @@
         "size": 7
     },
     {
-        "text": "Agenda",
-        "size": 7
-    },
-    {
         "text": "==========================================================================",
         "size": 7
     },
     {
         "text": "<",
+        "size": 7
+    },
+    {
+        "text": "4pm",
         "size": 7
     },
     {
@@ -1120,7 +1180,15 @@
         "size": 6
     },
     {
+        "text": "twitter",
+        "size": 6
+    },
+    {
         "text": "timeline",
+        "size": 6
+    },
+    {
+        "text": "tech",
         "size": 6
     },
     {
@@ -1133,10 +1201,6 @@
     },
     {
         "text": "survey",
-        "size": 6
-    },
-    {
-        "text": "start",
         "size": 6
     },
     {
@@ -1156,10 +1220,6 @@
         "size": 6
     },
     {
-        "text": "sharing",
-        "size": 6
-    },
-    {
         "text": "role",
         "size": 6
     },
@@ -1176,7 +1236,7 @@
         "size": 6
     },
     {
-        "text": "online",
+        "text": "participation",
         "size": 6
     },
     {
@@ -1192,19 +1252,11 @@
         "size": 6
     },
     {
-        "text": "lots",
-        "size": 6
-    },
-    {
         "text": "lot",
         "size": 6
     },
     {
         "text": "list",
-        "size": 6
-    },
-    {
-        "text": "leaving",
         "size": 6
     },
     {
@@ -1252,6 +1304,10 @@
         "size": 6
     },
     {
+        "text": "day",
+        "size": 6
+    },
+    {
         "text": "current",
         "size": 6
     },
@@ -1264,6 +1320,10 @@
         "size": 6
     },
     {
+        "text": "coming",
+        "size": 6
+    },
+    {
         "text": "clear",
         "size": 6
     },
@@ -1272,11 +1332,11 @@
         "size": 6
     },
     {
-        "text": "UK",
+        "text": "areas",
         "size": 6
     },
     {
-        "text": "Thank",
+        "text": "UK",
         "size": 6
     },
     {
@@ -1296,6 +1356,10 @@
         "size": 6
     },
     {
+        "text": "Questions:",
+        "size": 6
+    },
+    {
         "text": "Pulse",
         "size": 6
     },
@@ -1308,10 +1372,6 @@
         "size": 6
     },
     {
-        "text": "Meeting",
-        "size": 6
-    },
-    {
         "text": "Makey",
         "size": 6
     },
@@ -1320,7 +1380,7 @@
         "size": 6
     },
     {
-        "text": "Julia",
+        "text": "It's",
         "size": 6
     },
     {
@@ -1329,10 +1389,6 @@
     },
     {
         "text": "Is",
-        "size": 6
-    },
-    {
-        "text": "IoT",
         "size": 6
     },
     {
@@ -1364,10 +1420,6 @@
         "size": 6
     },
     {
-        "text": "4pm",
-        "size": 6
-    },
-    {
         "text": "14",
         "size": 6
     },
@@ -1392,7 +1444,7 @@
         "size": 5
     },
     {
-        "text": "usp=sharing",
+        "text": "understanding",
         "size": 5
     },
     {
@@ -1400,7 +1452,11 @@
         "size": 5
     },
     {
-        "text": "twitter",
+        "text": "travel",
+        "size": 5
+    },
+    {
+        "text": "thoughts",
         "size": 5
     },
     {
@@ -1409,10 +1465,6 @@
     },
     {
         "text": "template",
-        "size": 5
-    },
-    {
-        "text": "tech",
         "size": 5
     },
     {
@@ -1428,11 +1480,23 @@
         "size": 5
     },
     {
+        "text": "short",
+        "size": 5
+    },
+    {
         "text": "schedule",
         "size": 5
     },
     {
+        "text": "rules",
+        "size": 5
+    },
+    {
         "text": "room",
+        "size": 5
+    },
+    {
+        "text": "rocks",
         "size": 5
     },
     {
@@ -1445,10 +1509,6 @@
     },
     {
         "text": "point",
-        "size": 5
-    },
-    {
-        "text": "participation",
         "size": 5
     },
     {
@@ -1488,7 +1548,15 @@
         "size": 5
     },
     {
+        "text": "map",
+        "size": 5
+    },
+    {
         "text": "location",
+        "size": 5
+    },
+    {
+        "text": "locally",
         "size": 5
     },
     {
@@ -1501,6 +1569,18 @@
     },
     {
         "text": "large",
+        "size": 5
+    },
+    {
+        "text": "key",
+        "size": 5
+    },
+    {
+        "text": "items",
+        "size": 5
+    },
+    {
+        "text": "invites",
         "size": 5
     },
     {
@@ -1520,11 +1600,19 @@
         "size": 5
     },
     {
+        "text": "gained",
+        "size": 5
+    },
+    {
         "text": "future",
         "size": 5
     },
     {
         "text": "free",
+        "size": 5
+    },
+    {
+        "text": "forward",
         "size": 5
     },
     {
@@ -1548,19 +1636,11 @@
         "size": 5
     },
     {
-        "text": "day",
-        "size": 5
-    },
-    {
         "text": "crew",
         "size": 5
     },
     {
         "text": "conversations",
-        "size": 5
-    },
-    {
-        "text": "coming",
         "size": 5
     },
     {
@@ -1580,7 +1660,31 @@
         "size": 5
     },
     {
+        "text": "bit",
+        "size": 5
+    },
+    {
+        "text": "asks",
+        "size": 5
+    },
+    {
+        "text": "appreciated",
+        "size": 5
+    },
+    {
+        "text": "answers",
+        "size": 5
+    },
+    {
         "text": "agenda",
+        "size": 5
+    },
+    {
+        "text": "activity",
+        "size": 5
+    },
+    {
+        "text": "Work",
         "size": 5
     },
     {
@@ -1592,6 +1696,10 @@
         "size": 5
     },
     {
+        "text": "Takeaways:",
+        "size": 5
+    },
+    {
         "text": "TBD",
         "size": 5
     },
@@ -1600,15 +1708,15 @@
         "size": 5
     },
     {
-        "text": "Questions:",
-        "size": 5
-    },
-    {
         "text": "Questions",
         "size": 5
     },
     {
-        "text": "Proposals",
+        "text": "Progress",
+        "size": 5
+    },
+    {
+        "text": "Personal",
         "size": 5
     },
     {
@@ -1624,6 +1732,10 @@
         "size": 5
     },
     {
+        "text": "OR",
+        "size": 5
+    },
+    {
         "text": "Notes",
         "size": 5
     },
@@ -1633,10 +1745,6 @@
     },
     {
         "text": "More",
-        "size": 5
-    },
-    {
-        "text": "Marina",
         "size": 5
     },
     {
@@ -1668,6 +1776,10 @@
         "size": 5
     },
     {
+        "text": "Internet",
+        "size": 5
+    },
+    {
         "text": "Have",
         "size": 5
     },
@@ -1677,6 +1789,10 @@
     },
     {
         "text": "Groups",
+        "size": 5
+    },
+    {
+        "text": "Gratitude:",
         "size": 5
     },
     {
@@ -1696,11 +1812,27 @@
         "size": 5
     },
     {
+        "text": "Celebration:",
+        "size": 5
+    },
+    {
         "text": "Are",
         "size": 5
     },
     {
+        "text": "All",
+        "size": 5
+    },
+    {
+        "text": "@",
+        "size": 5
+    },
+    {
         "text": "=",
+        "size": 5
+    },
+    {
+        "text": "29",
         "size": 5
     },
     {
@@ -1724,6 +1856,10 @@
         "size": 4
     },
     {
+        "text": "view",
+        "size": 4
+    },
+    {
         "text": "version",
         "size": 4
     },
@@ -1732,23 +1868,15 @@
         "size": 4
     },
     {
+        "text": "update",
+        "size": 4
+    },
+    {
         "text": "upcoming",
         "size": 4
     },
     {
-        "text": "understanding",
-        "size": 4
-    },
-    {
         "text": "types",
-        "size": 4
-    },
-    {
-        "text": "travel",
-        "size": 4
-    },
-    {
-        "text": "thoughts",
         "size": 4
     },
     {
@@ -1792,7 +1920,7 @@
         "size": 4
     },
     {
-        "text": "short",
+        "text": "show",
         "size": 4
     },
     {
@@ -1813,6 +1941,14 @@
     },
     {
         "text": "represented",
+        "size": 4
+    },
+    {
+        "text": "related",
+        "size": 4
+    },
+    {
+        "text": "relate",
         "size": 4
     },
     {
@@ -1900,14 +2036,6 @@
         "size": 4
     },
     {
-        "text": "map",
-        "size": 4
-    },
-    {
-        "text": "locally",
-        "size": 4
-    },
-    {
         "text": "lit",
         "size": 4
     },
@@ -1932,10 +2060,6 @@
         "size": 4
     },
     {
-        "text": "key",
-        "size": 4
-    },
-    {
         "text": "job",
         "size": 4
     },
@@ -1945,6 +2069,10 @@
     },
     {
         "text": "interviews",
+        "size": 4
+    },
+    {
+        "text": "internet",
         "size": 4
     },
     {
@@ -1965,6 +2093,10 @@
     },
     {
         "text": "increase",
+        "size": 4
+    },
+    {
+        "text": "include",
         "size": 4
     },
     {
@@ -1992,11 +2124,11 @@
         "size": 4
     },
     {
-        "text": "gained",
+        "text": "google",
         "size": 4
     },
     {
-        "text": "forward",
+        "text": "glad",
         "size": 4
     },
     {
@@ -2005,6 +2137,10 @@
     },
     {
         "text": "food",
+        "size": 4
+    },
+    {
+        "text": "follow-up",
         "size": 4
     },
     {
@@ -2048,6 +2184,10 @@
         "size": 4
     },
     {
+        "text": "days",
+        "size": 4
+    },
+    {
         "text": "creating",
         "size": 4
     },
@@ -2060,7 +2200,19 @@
         "size": 4
     },
     {
+        "text": "continue",
+        "size": 4
+    },
+    {
         "text": "consumers",
+        "size": 4
+    },
+    {
+        "text": "connection",
+        "size": 4
+    },
+    {
+        "text": "computing",
         "size": 4
     },
     {
@@ -2096,7 +2248,7 @@
         "size": 4
     },
     {
-        "text": "bit",
+        "text": "big",
         "size": 4
     },
     {
@@ -2116,27 +2268,11 @@
         "size": 4
     },
     {
-        "text": "asks",
-        "size": 4
-    },
-    {
         "text": "art",
         "size": 4
     },
     {
-        "text": "areas",
-        "size": 4
-    },
-    {
-        "text": "appreciated",
-        "size": 4
-    },
-    {
         "text": "apply",
-        "size": 4
-    },
-    {
-        "text": "answers",
         "size": 4
     },
     {
@@ -2149,6 +2285,10 @@
     },
     {
         "text": "align",
+        "size": 4
+    },
+    {
+        "text": "ahead",
         "size": 4
     },
     {
@@ -2184,6 +2324,10 @@
         "size": 4
     },
     {
+        "text": "Where",
+        "size": 4
+    },
+    {
         "text": "We're",
         "size": 4
     },
@@ -2196,7 +2340,7 @@
         "size": 4
     },
     {
-        "text": "Takeaways:",
+        "text": "Steps",
         "size": 4
     },
     {
@@ -2236,19 +2380,23 @@
         "size": 4
     },
     {
-        "text": "Personal",
-        "size": 4
-    },
-    {
         "text": "Our",
         "size": 4
     },
     {
-        "text": "OR",
+        "text": "OPTIONAL",
         "size": 4
     },
     {
-        "text": "OPTIONAL",
+        "text": "Next",
+        "size": 4
+    },
+    {
+        "text": "Medium",
+        "size": 4
+    },
+    {
+        "text": "Maybe",
         "size": 4
     },
     {
@@ -2284,15 +2432,7 @@
         "size": 4
     },
     {
-        "text": "It's",
-        "size": 4
-    },
-    {
         "text": "Interviews",
-        "size": 4
-    },
-    {
-        "text": "Internet",
         "size": 4
     },
     {
@@ -2304,7 +2444,7 @@
         "size": 4
     },
     {
-        "text": "Gratitude:",
+        "text": "I've",
         "size": 4
     },
     {
@@ -2317,6 +2457,10 @@
     },
     {
         "text": "Figure",
+        "size": 4
+    },
+    {
+        "text": "ET",
         "size": 4
     },
     {
@@ -2340,11 +2484,11 @@
         "size": 4
     },
     {
-        "text": "Chat",
+        "text": "Chicago",
         "size": 4
     },
     {
-        "text": "Celebration:",
+        "text": "Chat",
         "size": 4
     },
     {
@@ -2360,15 +2504,11 @@
         "size": 4
     },
     {
-        "text": "All",
+        "text": "Also",
         "size": 4
     },
     {
         "text": "Add",
-        "size": 4
-    },
-    {
-        "text": "@",
         "size": 4
     },
     {
@@ -2381,10 +2521,6 @@
     },
     {
         "text": "4",
-        "size": 4
-    },
-    {
-        "text": "29",
         "size": 4
     },
     {
@@ -2440,10 +2576,6 @@
         "size": 3
     },
     {
-        "text": "view",
-        "size": 3
-    },
-    {
         "text": "valuable",
         "size": 3
     },
@@ -2465,6 +2597,14 @@
     },
     {
         "text": "tool",
+        "size": 3
+    },
+    {
+        "text": "thought",
+        "size": 3
+    },
+    {
+        "text": "thinking",
         "size": 3
     },
     {
@@ -2516,10 +2656,6 @@
         "size": 3
     },
     {
-        "text": "show",
-        "size": 3
-    },
-    {
         "text": "school",
         "size": 3
     },
@@ -2529,10 +2665,6 @@
     },
     {
         "text": "repo",
-        "size": 3
-    },
-    {
-        "text": "related",
         "size": 3
     },
     {
@@ -2577,6 +2709,10 @@
     },
     {
         "text": "piece",
+        "size": 3
+    },
+    {
+        "text": "physical",
         "size": 3
     },
     {
@@ -2672,6 +2808,10 @@
         "size": 3
     },
     {
+        "text": "left",
+        "size": 3
+    },
+    {
         "text": "learners",
         "size": 3
     },
@@ -2685,14 +2825,6 @@
     },
     {
         "text": "keeping",
-        "size": 3
-    },
-    {
-        "text": "items",
-        "size": 3
-    },
-    {
-        "text": "invites",
         "size": 3
     },
     {
@@ -2716,11 +2848,11 @@
         "size": 3
     },
     {
-        "text": "incorporate",
+        "text": "initial",
         "size": 3
     },
     {
-        "text": "include",
+        "text": "incorporate",
         "size": 3
     },
     {
@@ -2737,6 +2869,10 @@
     },
     {
         "text": "https://drive.google.com/drive/u/1/folders/0B6_ZVUFx2WHHMzhpdzd5ZFBaaFk",
+        "size": 3
+    },
+    {
+        "text": "helps",
         "size": 3
     },
     {
@@ -2764,15 +2900,7 @@
         "size": 3
     },
     {
-        "text": "google",
-        "size": 3
-    },
-    {
         "text": "goal",
-        "size": 3
-    },
-    {
-        "text": "glad",
         "size": 3
     },
     {
@@ -2789,10 +2917,6 @@
     },
     {
         "text": "forecast",
-        "size": 3
-    },
-    {
-        "text": "follow-up",
         "size": 3
     },
     {
@@ -2860,19 +2984,15 @@
         "size": 3
     },
     {
+        "text": "couple",
+        "size": 3
+    },
+    {
         "text": "contributions",
         "size": 3
     },
     {
-        "text": "continue",
-        "size": 3
-    },
-    {
         "text": "consistently",
-        "size": 3
-    },
-    {
-        "text": "connection",
         "size": 3
     },
     {
@@ -2924,6 +3044,10 @@
         "size": 3
     },
     {
+        "text": "check",
+        "size": 3
+    },
+    {
         "text": "characters",
         "size": 3
     },
@@ -2952,6 +3076,10 @@
         "size": 3
     },
     {
+        "text": "budget",
+        "size": 3
+    },
+    {
         "text": "broad",
         "size": 3
     },
@@ -2965,10 +3093,6 @@
     },
     {
         "text": "book",
-        "size": 3
-    },
-    {
-        "text": "big",
         "size": 3
     },
     {
@@ -3008,7 +3132,7 @@
         "size": 3
     },
     {
-        "text": "ahead",
+        "text": "afternoon",
         "size": 3
     },
     {
@@ -3016,7 +3140,7 @@
         "size": 3
     },
     {
-        "text": "activity",
+        "text": "adjust",
         "size": 3
     },
     {
@@ -3044,11 +3168,7 @@
         "size": 3
     },
     {
-        "text": "Work",
-        "size": 3
-    },
-    {
-        "text": "Where",
+        "text": "Would",
         "size": 3
     },
     {
@@ -3061,6 +3181,10 @@
     },
     {
         "text": "Utility",
+        "size": 3
+    },
+    {
+        "text": "UTC",
         "size": 3
     },
     {
@@ -3096,11 +3220,11 @@
         "size": 3
     },
     {
-        "text": "Steps",
+        "text": "Simon",
         "size": 3
     },
     {
-        "text": "Simon",
+        "text": "Should",
         "size": 3
     },
     {
@@ -3109,6 +3233,10 @@
     },
     {
         "text": "Send",
+        "size": 3
+    },
+    {
+        "text": "Sansing",
         "size": 3
     },
     {
@@ -3136,15 +3264,15 @@
         "size": 3
     },
     {
+        "text": "Ravensbourne",
+        "size": 3
+    },
+    {
         "text": "Prototype",
         "size": 3
     },
     {
         "text": "Promotion",
-        "size": 3
-    },
-    {
-        "text": "Progress",
         "size": 3
     },
     {
@@ -3172,6 +3300,10 @@
         "size": 3
     },
     {
+        "text": "Or",
+        "size": 3
+    },
+    {
         "text": "Not",
         "size": 3
     },
@@ -3180,15 +3312,7 @@
         "size": 3
     },
     {
-        "text": "Next",
-        "size": 3
-    },
-    {
         "text": "Nairobi",
-        "size": 3
-    },
-    {
-        "text": "NEW",
         "size": 3
     },
     {
@@ -3208,10 +3332,6 @@
         "size": 3
     },
     {
-        "text": "Medium",
-        "size": 3
-    },
-    {
         "text": "Matthew",
         "size": 3
     },
@@ -3225,6 +3345,10 @@
     },
     {
         "text": "MOCO",
+        "size": 3
+    },
+    {
+        "text": "Looking",
         "size": 3
     },
     {
@@ -3320,10 +3444,6 @@
         "size": 3
     },
     {
-        "text": "ET",
-        "size": 3
-    },
-    {
         "text": "EST",
         "size": 3
     },
@@ -3364,10 +3484,6 @@
         "size": 3
     },
     {
-        "text": "Chicago",
-        "size": 3
-    },
-    {
         "text": "Check",
         "size": 3
     },
@@ -3393,6 +3509,10 @@
     },
     {
         "text": "Anna",
+        "size": 3
+    },
+    {
+        "text": "An",
         "size": 3
     },
     {
@@ -3428,11 +3548,19 @@
         "size": 3
     },
     {
+        "text": "zen",
+        "size": 2
+    },
+    {
         "text": "younger",
         "size": 2
     },
     {
         "text": "young",
+        "size": 2
+    },
+    {
+        "text": "yesterday",
         "size": 2
     },
     {
@@ -3516,7 +3644,7 @@
         "size": 2
     },
     {
-        "text": "update",
+        "text": "updates",
         "size": 2
     },
     {
@@ -3576,14 +3704,6 @@
         "size": 2
     },
     {
-        "text": "thought",
-        "size": 2
-    },
-    {
-        "text": "thinking",
-        "size": 2
-    },
-    {
         "text": "themes",
         "size": 2
     },
@@ -3609,6 +3729,10 @@
     },
     {
         "text": "teams",
+        "size": 2
+    },
+    {
+        "text": "teaching/learning",
         "size": 2
     },
     {
@@ -3660,6 +3784,10 @@
         "size": 2
     },
     {
+        "text": "submitting",
+        "size": 2
+    },
+    {
         "text": "submitter",
         "size": 2
     },
@@ -3677,6 +3805,10 @@
     },
     {
         "text": "stories/content",
+        "size": 2
+    },
+    {
+        "text": "stipends",
         "size": 2
     },
     {
@@ -3796,6 +3928,10 @@
         "size": 2
     },
     {
+        "text": "robotics",
+        "size": 2
+    },
+    {
         "text": "restaurants",
         "size": 2
     },
@@ -3813,6 +3949,10 @@
     },
     {
         "text": "respond",
+        "size": 2
+    },
+    {
+        "text": "represent",
         "size": 2
     },
     {
@@ -3836,10 +3976,6 @@
         "size": 2
     },
     {
-        "text": "relate",
-        "size": 2
-    },
-    {
         "text": "regularly",
         "size": 2
     },
@@ -3849,6 +3985,10 @@
     },
     {
         "text": "reflection",
+        "size": 2
+    },
+    {
+        "text": "reflect",
         "size": 2
     },
     {
@@ -3949,10 +4089,6 @@
     },
     {
         "text": "piano",
-        "size": 2
-    },
-    {
-        "text": "physical",
         "size": 2
     },
     {
@@ -4144,6 +4280,10 @@
         "size": 2
     },
     {
+        "text": "literate",
+        "size": 2
+    },
+    {
         "text": "listening",
         "size": 2
     },
@@ -4161,10 +4301,6 @@
     },
     {
         "text": "librarians",
-        "size": 2
-    },
-    {
-        "text": "left",
         "size": 2
     },
     {
@@ -4240,10 +4376,6 @@
         "size": 2
     },
     {
-        "text": "internet",
-        "size": 2
-    },
-    {
         "text": "interests",
         "size": 2
     },
@@ -4256,6 +4388,10 @@
         "size": 2
     },
     {
+        "text": "interact",
+        "size": 2
+    },
+    {
         "text": "inside",
         "size": 2
     },
@@ -4265,10 +4401,6 @@
     },
     {
         "text": "innovation",
-        "size": 2
-    },
-    {
-        "text": "initial",
         "size": 2
     },
     {
@@ -4328,6 +4460,10 @@
         "size": 2
     },
     {
+        "text": "https://github.com/MozillaFoundation/mozfest-program-2016",
+        "size": 2
+    },
+    {
         "text": "https://drive.google.com/drive/u/1/folders/0B6_ZVUFx2WHHYS16UFREUnF3Y0U",
         "size": 2
     },
@@ -4364,7 +4500,7 @@
         "size": 2
     },
     {
-        "text": "helps",
+        "text": "happened",
         "size": 2
     },
     {
@@ -4389,6 +4525,10 @@
     },
     {
         "text": "graduate",
+        "size": 2
+    },
+    {
+        "text": "gonna",
         "size": 2
     },
     {
@@ -4437,6 +4577,10 @@
     },
     {
         "text": "finish",
+        "size": 2
+    },
+    {
+        "text": "fill-in-the-blank",
         "size": 2
     },
     {
@@ -4532,6 +4676,10 @@
         "size": 2
     },
     {
+        "text": "elements",
+        "size": 2
+    },
+    {
         "text": "efforts",
         "size": 2
     },
@@ -4545,6 +4693,10 @@
     },
     {
         "text": "easy",
+        "size": 2
+    },
+    {
+        "text": "e-mail",
         "size": 2
     },
     {
@@ -4640,10 +4792,6 @@
         "size": 2
     },
     {
-        "text": "days",
-        "size": 2
-    },
-    {
         "text": "dates",
         "size": 2
     },
@@ -4660,11 +4808,11 @@
         "size": 2
     },
     {
-        "text": "cover",
+        "text": "crazy",
         "size": 2
     },
     {
-        "text": "couple",
+        "text": "cover",
         "size": 2
     },
     {
@@ -4720,10 +4868,6 @@
         "size": 2
     },
     {
-        "text": "computing",
-        "size": 2
-    },
-    {
         "text": "communications:",
         "size": 2
     },
@@ -4756,10 +4900,6 @@
         "size": 2
     },
     {
-        "text": "check",
-        "size": 2
-    },
-    {
         "text": "chats",
         "size": 2
     },
@@ -4785,10 +4925,6 @@
     },
     {
         "text": "camp",
-        "size": 2
-    },
-    {
-        "text": "budget",
         "size": 2
     },
     {
@@ -4876,11 +5012,11 @@
         "size": 2
     },
     {
-        "text": "aim",
+        "text": "amazing",
         "size": 2
     },
     {
-        "text": "afternoon",
+        "text": "aim",
         "size": 2
     },
     {
@@ -4893,10 +5029,6 @@
     },
     {
         "text": "admin",
-        "size": 2
-    },
-    {
-        "text": "adjust",
         "size": 2
     },
     {
@@ -4961,10 +5093,6 @@
     },
     {
         "text": "York",
-        "size": 2
-    },
-    {
-        "text": "Would",
         "size": 2
     },
     {
@@ -5040,15 +5168,15 @@
         "size": 2
     },
     {
+        "text": "Understanding",
+        "size": 2
+    },
+    {
         "text": "UX",
         "size": 2
     },
     {
         "text": "UTC/",
-        "size": 2
-    },
-    {
-        "text": "UTC",
         "size": 2
     },
     {
@@ -5101,6 +5229,10 @@
     },
     {
         "text": "Template",
+        "size": 2
+    },
+    {
+        "text": "Tech",
         "size": 2
     },
     {
@@ -5180,10 +5312,6 @@
         "size": 2
     },
     {
-        "text": "Should",
-        "size": 2
-    },
-    {
         "text": "Ship",
         "size": 2
     },
@@ -5221,10 +5349,6 @@
     },
     {
         "text": "Schaefer",
-        "size": 2
-    },
-    {
-        "text": "Sansing",
         "size": 2
     },
     {
@@ -5269,10 +5393,6 @@
     },
     {
         "text": "Reduce",
-        "size": 2
-    },
-    {
-        "text": "Ravensbourne",
         "size": 2
     },
     {
@@ -5332,6 +5452,10 @@
         "size": 2
     },
     {
+        "text": "Post",
+        "size": 2
+    },
+    {
         "text": "Possible",
         "size": 2
     },
@@ -5360,10 +5484,6 @@
         "size": 2
     },
     {
-        "text": "Or",
-        "size": 2
-    },
-    {
         "text": "Opening",
         "size": 2
     },
@@ -5377,6 +5497,10 @@
     },
     {
         "text": "Onboarding",
+        "size": 2
+    },
+    {
+        "text": "Offline",
         "size": 2
     },
     {
@@ -5397,6 +5521,10 @@
     },
     {
         "text": "Navigate/search/find",
+        "size": 2
+    },
+    {
+        "text": "National",
         "size": 2
     },
     {
@@ -5472,10 +5600,6 @@
         "size": 2
     },
     {
-        "text": "Maybe",
-        "size": 2
-    },
-    {
         "text": "May/June",
         "size": 2
     },
@@ -5508,15 +5632,15 @@
         "size": 2
     },
     {
+        "text": "Love",
+        "size": 2
+    },
+    {
         "text": "Lotta",
         "size": 2
     },
     {
         "text": "Lots",
-        "size": 2
-    },
-    {
-        "text": "Looking",
         "size": 2
     },
     {
@@ -5564,6 +5688,10 @@
         "size": 2
     },
     {
+        "text": "I’ve",
+        "size": 2
+    },
+    {
         "text": "Intake-",
         "size": 2
     },
@@ -5600,10 +5728,6 @@
         "size": 2
     },
     {
-        "text": "I've",
-        "size": 2
-    },
-    {
         "text": "Human",
         "size": 2
     },
@@ -5632,15 +5756,15 @@
         "size": 2
     },
     {
+        "text": "Hands",
+        "size": 2
+    },
+    {
         "text": "Hana",
         "size": 2
     },
     {
         "text": "Hack",
-        "size": 2
-    },
-    {
-        "text": "HERE",
         "size": 2
     },
     {
@@ -5916,6 +6040,10 @@
         "size": 2
     },
     {
+        "text": "Camp",
+        "size": 2
+    },
+    {
         "text": "Cadence",
         "size": 2
     },
@@ -5996,11 +6124,11 @@
         "size": 2
     },
     {
-        "text": "Also",
+        "text": "Activity",
         "size": 2
     },
     {
-        "text": "Activity",
+        "text": "AND",
         "size": 2
     },
     {
@@ -6120,6 +6248,10 @@
         "size": 2
     },
     {
+        "text": "#MIMI",
+        "size": 2
+    },
+    {
         "text": "\"purpose",
         "size": 2
     },
@@ -6173,10 +6305,6 @@
     },
     {
         "text": "yikes",
-        "size": 1
-    },
-    {
-        "text": "yesterday",
         "size": 1
     },
     {
@@ -6400,6 +6528,10 @@
         "size": 1
     },
     {
+        "text": "volunteering",
+        "size": 1
+    },
+    {
         "text": "volunteer",
         "size": 1
     },
@@ -6480,6 +6612,10 @@
         "size": 1
     },
     {
+        "text": "vacation",
+        "size": 1
+    },
+    {
         "text": "v=agSpbuzAF1w&feature=youtu.be",
         "size": 1
     },
@@ -6513,10 +6649,6 @@
     },
     {
         "text": "ups",
-        "size": 1
-    },
-    {
-        "text": "updates",
         "size": 1
     },
     {
@@ -6876,6 +7008,10 @@
         "size": 1
     },
     {
+        "text": "temp",
+        "size": 1
+    },
+    {
         "text": "tells",
         "size": 1
     },
@@ -6901,10 +7037,6 @@
     },
     {
         "text": "teachtheweb",
-        "size": 1
-    },
-    {
-        "text": "teaching/learning",
         "size": 1
     },
     {
@@ -7060,10 +7192,6 @@
         "size": 1
     },
     {
-        "text": "submitting",
-        "size": 1
-    },
-    {
         "text": "submitters",
         "size": 1
     },
@@ -7149,10 +7277,6 @@
     },
     {
         "text": "stipends:",
-        "size": 1
-    },
-    {
-        "text": "stipends",
         "size": 1
     },
     {
@@ -7332,6 +7456,10 @@
         "size": 1
     },
     {
+        "text": "slightly",
+        "size": 1
+    },
+    {
         "text": "slack",
         "size": 1
     },
@@ -7376,7 +7504,15 @@
         "size": 1
     },
     {
+        "text": "simplifying",
+        "size": 1
+    },
+    {
         "text": "simplify",
+        "size": 1
+    },
+    {
+        "text": "simplicity:",
         "size": 1
     },
     {
@@ -7449,6 +7585,10 @@
     },
     {
         "text": "shaddow",
+        "size": 1
+    },
+    {
+        "text": "setup",
         "size": 1
     },
     {
@@ -7528,6 +7668,10 @@
         "size": 1
     },
     {
+        "text": "seamless",
+        "size": 1
+    },
+    {
         "text": "scrub",
         "size": 1
     },
@@ -7588,6 +7732,10 @@
         "size": 1
     },
     {
+        "text": "running",
+        "size": 1
+    },
+    {
         "text": "run",
         "size": 1
     },
@@ -7617,14 +7765,6 @@
     },
     {
         "text": "roles:",
-        "size": 1
-    },
-    {
-        "text": "rocks",
-        "size": 1
-    },
-    {
-        "text": "robotics",
         "size": 1
     },
     {
@@ -7800,10 +7940,6 @@
         "size": 1
     },
     {
-        "text": "represent",
-        "size": 1
-    },
-    {
         "text": "repos",
         "size": 1
     },
@@ -7876,6 +8012,10 @@
         "size": 1
     },
     {
+        "text": "relates",
+        "size": 1
+    },
+    {
         "text": "reinforcements",
         "size": 1
     },
@@ -7909,10 +8049,6 @@
     },
     {
         "text": "reflected",
-        "size": 1
-    },
-    {
-        "text": "reflect",
         "size": 1
     },
     {
@@ -8020,7 +8156,15 @@
         "size": 1
     },
     {
+        "text": "quieter",
+        "size": 1
+    },
+    {
         "text": "quickly",
+        "size": 1
+    },
+    {
+        "text": "questions:",
         "size": 1
     },
     {
@@ -8156,6 +8300,10 @@
         "size": 1
     },
     {
+        "text": "pro",
+        "size": 1
+    },
+    {
         "text": "prize",
         "size": 1
     },
@@ -8201,6 +8349,10 @@
     },
     {
         "text": "pretty",
+        "size": 1
+    },
+    {
+        "text": "presenting",
         "size": 1
     },
     {
@@ -8320,6 +8472,10 @@
         "size": 1
     },
     {
+        "text": "polystyrene",
+        "size": 1
+    },
+    {
         "text": "pointing",
         "size": 1
     },
@@ -8349,6 +8505,10 @@
     },
     {
         "text": "plenty",
+        "size": 1
+    },
+    {
+        "text": "playspace",
         "size": 1
     },
     {
@@ -8416,6 +8576,10 @@
         "size": 1
     },
     {
+        "text": "philosophy",
+        "size": 1
+    },
+    {
         "text": "phase",
         "size": 1
     },
@@ -8433,6 +8597,10 @@
     },
     {
         "text": "persistent",
+        "size": 1
+    },
+    {
+        "text": "permissions",
         "size": 1
     },
     {
@@ -8736,6 +8904,10 @@
         "size": 1
     },
     {
+        "text": "navigation",
+        "size": 1
+    },
+    {
         "text": "napping",
         "size": 1
     },
@@ -8940,6 +9112,10 @@
         "size": 1
     },
     {
+        "text": "mechanics",
+        "size": 1
+    },
+    {
         "text": "meaty",
         "size": 1
     },
@@ -9048,6 +9224,10 @@
         "size": 1
     },
     {
+        "text": "lots-o-teachtheweb",
+        "size": 1
+    },
+    {
         "text": "long",
         "size": 1
     },
@@ -9089,10 +9269,6 @@
     },
     {
         "text": "littleBits",
-        "size": 1
-    },
-    {
-        "text": "literate",
         "size": 1
     },
     {
@@ -9264,6 +9440,10 @@
         "size": 1
     },
     {
+        "text": "kep",
+        "size": 1
+    },
+    {
         "text": "jumping",
         "size": 1
     },
@@ -9376,7 +9556,7 @@
         "size": 1
     },
     {
-        "text": "interact",
+        "text": "interconnects",
         "size": 1
     },
     {
@@ -9576,6 +9756,10 @@
         "size": 1
     },
     {
+        "text": "identified",
+        "size": 1
+    },
+    {
         "text": "id=3m87m99ooirjtgfdjtaadxh8kr",
         "size": 1
     },
@@ -9740,11 +9924,19 @@
         "size": 1
     },
     {
+        "text": "https://medium.com/mozfest-2016/making-teaching-and-learning-more-inviting-dcedfd4a9580#.kjewjy21q",
+        "size": 1
+    },
+    {
         "text": "https://medium.com/mozfest-2016/demystify-the-web-call-for-proposals-at-mozfest-b96d7965f856#.shq95l5ol",
         "size": 1
     },
     {
         "text": "https://london.hackspace.org.uk/events/",
+        "size": 1
+    },
+    {
+        "text": "https://learning.mozilla.org/community/community-call",
         "size": 1
     },
     {
@@ -9793,10 +9985,6 @@
     },
     {
         "text": "https://github.com/MozillaFoundation/mozfest2016-demystify-the-web",
-        "size": 1
-    },
-    {
-        "text": "https://github.com/MozillaFoundation/mozfest-program-2016",
         "size": 1
     },
     {
@@ -9908,6 +10096,14 @@
         "size": 1
     },
     {
+        "text": "https://docs.google.com/a/mozilla.com/document/d/1woBnfVpU0iHJB9dm52DOJNrCsZ_jopiY754IeJ3cMUo/edit",
+        "size": 1
+    },
+    {
+        "text": "https://docs.google.com/a/cps.edu/document/d/1M1cwULgRI6AT67-eVQrSh_25ni1oq4Cqjmaa0dwUF0M/edit",
+        "size": 1
+    },
+    {
         "text": "https://discourse.webmaker.org/c/mozfest-2016",
         "size": 1
     },
@@ -9921,6 +10117,10 @@
     },
     {
         "text": "https://chat.mozillafoundation.org/mozilla/channels/learning-at-mozfest",
+        "size": 1
+    },
+    {
+        "text": "https://blog.mozilla.org/gigabit/advancing-the-promise-of-gigabit-internet-for-learning-in-austin/",
         "size": 1
     },
     {
@@ -10020,6 +10220,10 @@
         "size": 1
     },
     {
+        "text": "http://www.csszengarden.com/",
+        "size": 1
+    },
+    {
         "text": "http://www.claphampottery.co.uk/parties/pottery-parties",
         "size": 1
     },
@@ -10049,6 +10253,10 @@
     },
     {
         "text": "http://the-crystal-maze.com/",
+        "size": 1
+    },
+    {
+        "text": "http://techcampgreen.weebly.com/week-1.html",
         "size": 1
     },
     {
@@ -10288,7 +10496,7 @@
         "size": 1
     },
     {
-        "text": "happened",
+        "text": "happy",
         "size": 1
     },
     {
@@ -10416,10 +10624,6 @@
         "size": 1
     },
     {
-        "text": "gonna",
-        "size": 1
-    },
-    {
         "text": "goer",
         "size": 1
     },
@@ -10492,7 +10696,7 @@
         "size": 1
     },
     {
-        "text": "garden",
+        "text": "gardens",
         "size": 1
     },
     {
@@ -10640,6 +10844,10 @@
         "size": 1
     },
     {
+        "text": "foam",
+        "size": 1
+    },
+    {
         "text": "flying",
         "size": 1
     },
@@ -10649,6 +10857,10 @@
     },
     {
         "text": "flowing",
+        "size": 1
+    },
+    {
+        "text": "flow",
         "size": 1
     },
     {
@@ -10709,10 +10921,6 @@
     },
     {
         "text": "filled",
-        "size": 1
-    },
-    {
-        "text": "fill-in-the-blank",
         "size": 1
     },
     {
@@ -10896,11 +11104,23 @@
         "size": 1
     },
     {
+        "text": "expanded",
+        "size": 1
+    },
+    {
         "text": "exosystem",
         "size": 1
     },
     {
         "text": "existance",
+        "size": 1
+    },
+    {
+        "text": "exhibiting",
+        "size": 1
+    },
+    {
+        "text": "exhausting:",
         "size": 1
     },
     {
@@ -11072,6 +11292,10 @@
         "size": 1
     },
     {
+        "text": "energy",
+        "size": 1
+    },
+    {
         "text": "ends",
         "size": 1
     },
@@ -11132,10 +11356,6 @@
         "size": 1
     },
     {
-        "text": "elements",
-        "size": 1
-    },
-    {
         "text": "elective",
         "size": 1
     },
@@ -11188,15 +11408,15 @@
         "size": 1
     },
     {
-        "text": "e-mail",
-        "size": 1
-    },
-    {
         "text": "dylan",
         "size": 1
     },
     {
         "text": "dummy",
+        "size": 1
+    },
+    {
+        "text": "driving",
         "size": 1
     },
     {
@@ -11268,6 +11488,10 @@
         "size": 1
     },
     {
+        "text": "distributed",
+        "size": 1
+    },
+    {
         "text": "disruptive",
         "size": 1
     },
@@ -11277,6 +11501,10 @@
     },
     {
         "text": "discussion",
+        "size": 1
+    },
+    {
+        "text": "discussed",
         "size": 1
     },
     {
@@ -11468,6 +11696,10 @@
         "size": 1
     },
     {
+        "text": "decentralization",
+        "size": 1
+    },
+    {
         "text": "debrief",
         "size": 1
     },
@@ -11580,7 +11812,7 @@
         "size": 1
     },
     {
-        "text": "crazy",
+        "text": "crazy:",
         "size": 1
     },
     {
@@ -11597,6 +11829,10 @@
     },
     {
         "text": "coverage",
+        "size": 1
+    },
+    {
+        "text": "costs",
         "size": 1
     },
     {
@@ -11733,6 +11969,10 @@
     },
     {
         "text": "computer",
+        "size": 1
+    },
+    {
+        "text": "computationally",
         "size": 1
     },
     {
@@ -11929,6 +12169,10 @@
     },
     {
         "text": "checkin",
+        "size": 1
+    },
+    {
+        "text": "chasing",
         "size": 1
     },
     {
@@ -12432,6 +12676,10 @@
         "size": 1
     },
     {
+        "text": "arrive",
+        "size": 1
+    },
+    {
         "text": "arrays",
         "size": 1
     },
@@ -12528,6 +12776,10 @@
         "size": 1
     },
     {
+        "text": "analogs",
+        "size": 1
+    },
+    {
         "text": "amt",
         "size": 1
     },
@@ -12541,10 +12793,6 @@
     },
     {
         "text": "ambassadors",
-        "size": 1
-    },
-    {
-        "text": "amazing",
         "size": 1
     },
     {
@@ -12880,6 +13128,10 @@
         "size": 1
     },
     {
+        "text": "Writing",
+        "size": 1
+    },
+    {
         "text": "Write",
         "size": 1
     },
@@ -13060,11 +13312,11 @@
         "size": 1
     },
     {
-        "text": "Universal",
+        "text": "Update",
         "size": 1
     },
     {
-        "text": "Understanding",
+        "text": "Universal",
         "size": 1
     },
     {
@@ -13132,6 +13384,10 @@
         "size": 1
     },
     {
+        "text": "Today",
+        "size": 1
+    },
+    {
         "text": "Title",
         "size": 1
     },
@@ -13149,6 +13405,10 @@
     },
     {
         "text": "Thisis",
+        "size": 1
+    },
+    {
+        "text": "Thinking",
         "size": 1
     },
     {
@@ -13177,6 +13437,10 @@
     },
     {
         "text": "That's",
+        "size": 1
+    },
+    {
+        "text": "Thanks",
         "size": 1
     },
     {
@@ -13248,10 +13512,6 @@
         "size": 1
     },
     {
-        "text": "THEM",
-        "size": 1
-    },
-    {
         "text": "TEXAS",
         "size": 1
     },
@@ -13285,6 +13545,10 @@
     },
     {
         "text": "Summit",
+        "size": 1
+    },
+    {
+        "text": "Summer",
         "size": 1
     },
     {
@@ -13448,6 +13712,10 @@
         "size": 1
     },
     {
+        "text": "Sheets",
+        "size": 1
+    },
+    {
         "text": "Sheet:",
         "size": 1
     },
@@ -13464,6 +13732,10 @@
         "size": 1
     },
     {
+        "text": "Sent",
+        "size": 1
+    },
+    {
         "text": "Seminar",
         "size": 1
     },
@@ -13477,6 +13749,10 @@
     },
     {
         "text": "Script:",
+        "size": 1
+    },
+    {
+        "text": "Scratch",
         "size": 1
     },
     {
@@ -13528,6 +13804,10 @@
         "size": 1
     },
     {
+        "text": "SUPPORT",
+        "size": 1
+    },
+    {
         "text": "SUPER",
         "size": 1
     },
@@ -13573,6 +13853,10 @@
     },
     {
         "text": "Rogers",
+        "size": 1
+    },
+    {
+        "text": "Robotics",
         "size": 1
     },
     {
@@ -13820,10 +14104,6 @@
         "size": 1
     },
     {
-        "text": "Post",
-        "size": 1
-    },
-    {
         "text": "Portfolio",
         "size": 1
     },
@@ -13924,7 +14204,7 @@
         "size": 1
     },
     {
-        "text": "PUT",
+        "text": "PT",
         "size": 1
     },
     {
@@ -14028,10 +14308,6 @@
         "size": 1
     },
     {
-        "text": "Offline",
-        "size": 1
-    },
-    {
         "text": "Official:",
         "size": 1
     },
@@ -14104,10 +14380,6 @@
         "size": 1
     },
     {
-        "text": "National",
-        "size": 1
-    },
-    {
         "text": "Name\"",
         "size": 1
     },
@@ -14116,11 +14388,23 @@
         "size": 1
     },
     {
+        "text": "NP",
+        "size": 1
+    },
+    {
         "text": "NOTES",
         "size": 1
     },
     {
         "text": "NOT",
+        "size": 1
+    },
+    {
+        "text": "NEW",
+        "size": 1
+    },
+    {
+        "text": "NEED",
         "size": 1
     },
     {
@@ -14192,6 +14476,10 @@
         "size": 1
     },
     {
+        "text": "Mexico",
+        "size": 1
+    },
+    {
         "text": "Meta-analysis",
         "size": 1
     },
@@ -14248,6 +14536,10 @@
         "size": 1
     },
     {
+        "text": "Many",
+        "size": 1
+    },
+    {
         "text": "Manka",
         "size": 1
     },
@@ -14296,6 +14588,10 @@
         "size": 1
     },
     {
+        "text": "MaKeyMaKey",
+        "size": 1
+    },
+    {
         "text": "MORE",
         "size": 1
     },
@@ -14325,10 +14621,6 @@
     },
     {
         "text": "Loved",
-        "size": 1
-    },
-    {
-        "text": "Love",
         "size": 1
     },
     {
@@ -14528,6 +14820,10 @@
         "size": 1
     },
     {
+        "text": "KiraKira",
+        "size": 1
+    },
+    {
         "text": "Kinda",
         "size": 1
     },
@@ -14609,10 +14905,6 @@
     },
     {
         "text": "Janice",
-        "size": 1
-    },
-    {
-        "text": "I’ve",
         "size": 1
     },
     {
@@ -14748,6 +15040,10 @@
         "size": 1
     },
     {
+        "text": "Hummingbird",
+        "size": 1
+    },
+    {
         "text": "Hotel",
         "size": 1
     },
@@ -14812,10 +15108,6 @@
         "size": 1
     },
     {
-        "text": "Hands",
-        "size": 1
-    },
-    {
         "text": "Handbook:",
         "size": 1
     },
@@ -14832,7 +15124,19 @@
         "size": 1
     },
     {
+        "text": "Had",
+        "size": 1
+    },
+    {
         "text": "HOW",
+        "size": 1
+    },
+    {
+        "text": "HIGH",
+        "size": 1
+    },
+    {
+        "text": "HERE",
         "size": 1
     },
     {
@@ -14921,6 +15225,10 @@
     },
     {
         "text": "Generate",
+        "size": 1
+    },
+    {
+        "text": "Gathering",
         "size": 1
     },
     {
@@ -15204,6 +15512,10 @@
         "size": 1
     },
     {
+        "text": "Elegant",
+        "size": 1
+    },
+    {
         "text": "Electic",
         "size": 1
     },
@@ -15261,6 +15573,10 @@
     },
     {
         "text": "Don’t",
+        "size": 1
+    },
+    {
+        "text": "Doc",
         "size": 1
     },
     {
@@ -15337,6 +15653,10 @@
     },
     {
         "text": "Dance",
+        "size": 1
+    },
+    {
+        "text": "Dallas",
         "size": 1
     },
     {
@@ -15420,6 +15740,10 @@
         "size": 1
     },
     {
+        "text": "Cool",
+        "size": 1
+    },
+    {
         "text": "Convo",
         "size": 1
     },
@@ -15437,6 +15761,10 @@
     },
     {
         "text": "Contribution",
+        "size": 1
+    },
+    {
+        "text": "Continued",
         "size": 1
     },
     {
@@ -15649,6 +15977,10 @@
     },
     {
         "text": "CFP",
+        "size": 1
+    },
+    {
+        "text": "CC'd",
         "size": 1
     },
     {
@@ -15920,10 +16252,6 @@
         "size": 1
     },
     {
-        "text": "An",
-        "size": 1
-    },
-    {
         "text": "Amplify",
         "size": 1
     },
@@ -15961,6 +16289,10 @@
     },
     {
         "text": "African",
+        "size": 1
+    },
+    {
+        "text": "Affirmatioin",
         "size": 1
     },
     {
@@ -16020,6 +16352,10 @@
         "size": 1
     },
     {
+        "text": "Academy",
+        "size": 1
+    },
+    {
         "text": "Academics",
         "size": 1
     },
@@ -16041,10 +16377,6 @@
     },
     {
         "text": "APIs",
-        "size": 1
-    },
-    {
-        "text": "AND",
         "size": 1
     },
     {
@@ -16177,6 +16509,10 @@
     },
     {
         "text": "8x8x8",
+        "size": 1
+    },
+    {
+        "text": "8pm",
         "size": 1
     },
     {
@@ -16332,6 +16668,10 @@
         "size": 1
     },
     {
+        "text": "24th",
+        "size": 1
+    },
+    {
         "text": "230",
         "size": 1
     },
@@ -16365,6 +16705,10 @@
     },
     {
         "text": "1st",
+        "size": 1
+    },
+    {
+        "text": "1pm",
         "size": 1
     },
     {
@@ -16508,6 +16852,10 @@
         "size": 1
     },
     {
+        "text": "*does*",
+        "size": 1
+    },
+    {
         "text": "*can*",
         "size": 1
     },
@@ -16568,7 +16916,7 @@
         "size": 1
     },
     {
-        "text": "#MIMI",
+        "text": "#MozLondon",
         "size": 1
     },
     {
@@ -16585,6 +16933,10 @@
     },
     {
         "text": "\"welcome",
+        "size": 1
+    },
+    {
+        "text": "\"web\"",
         "size": 1
     },
     {
@@ -16693,6 +17045,10 @@
     },
     {
         "text": "\"blurb\"",
+        "size": 1
+    },
+    {
+        "text": "\"award\"",
         "size": 1
     },
     {
