@@ -45,7 +45,7 @@ nav {
   padding: 1rem 2rem;
   text-align: right;
   z-index: 1000;
-  box-sizing: padding-box;
+  box-sizing: border-box;
   h1 {
     display: inline-block;
     margin: 0 3rem 0 0;
@@ -63,7 +63,7 @@ nav {
       color: $grey;
     }
     &:hover {
-      color: #FF1660;
+      color: $turquoise;
     }
   }
 }

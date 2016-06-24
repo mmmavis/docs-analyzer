@@ -46,6 +46,7 @@
 }
 
 #word-cloud-container {
-  margin: 2rem auto;
-  width: auto;
+  box-sizing: border-box;
+  width: calc( 100% - 400px );
+  text-align: center;
 }
