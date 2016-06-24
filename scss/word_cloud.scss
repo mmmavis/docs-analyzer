@@ -38,7 +38,7 @@
       li:nth-child(#{$i}) h3 { 
         background: adjust-hue($orange, $i*6);
         &:hover {
-          background: $black;
+          background: $turquoise;
         }
       }
     } 

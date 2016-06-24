@@ -106,6 +106,7 @@ generateJson(ETHERPAD_SLUGS);
 
 // run every 10 mins
 var recurringTask = schedule.scheduleJob('*/10 * * * *', function(){
+  etherpads = []; // reset etherpads
   generateJson(ETHERPAD_SLUGS);
 });
 

@@ -1,5 +1,10 @@
-.page.home {
-  margin: 20px;
+#search-container {
+  background: #333;
+  position: fixed;
+  top: 40px;
+  width: 550px;
+  height: 100%;
+  color: $white;
 }
 
 #search {
@@ -7,13 +12,77 @@
     margin: 1rem 0 .5rem 0;
   }
   .keyphrase {
-    background: #fff;
+    color: #ccc;
+    background: $grey;
     border-radius: 3px;
     cursor: pointer;
     &.active,
     &:hover {
-      color: #fff;
-      background: #555;
+      color: $grey;
+      background: $white;
     }
+  }
+}
+
+#search-result {
+  color: $orange;
+}
+
+#reset {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 0px 5px;
+  border-radius: 3px;
+  color: #000;
+  background: $turquoise;
+  cursor: pointer;
+  float: right;
+  &:hover {
+    background: darken($turquoise, 20);
+  }
+}
+
+#search {
+  h3 {
+    margin: 1rem 0 .5rem 0;
+  }
+}
+
+
+#etherpads-container {
+  width: calc(100% - 650px);
+  margin-left: 600px;
+  padding-top: 0;
+  // height: 500px;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+}
+
+#etherpad-result {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.etherpad {
+  padding: 2rem;
+  // &:nth-child(2n+1) {
+  //   background: #ccc;
+  // }
+  h3 {
+    padding: .5rem 1rem;
+    background: $orange;
+    margin-top: 0;
+    color: $grey;
+    border-radius: 3px;
+    a {
+      color: $black;
+      margin-left: 1rem;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .content {
+    margin-left: 30px;
   }
 }
