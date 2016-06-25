@@ -7,7 +7,6 @@ var _ = require('underscore');
 var schedule = require('node-schedule');
 var tm = require('text-miner');
 var pug = require('pug');
-var path = require('path');
 var fs = require("fs");
 
 // load env vars from .env file
