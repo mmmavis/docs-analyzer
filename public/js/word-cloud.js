@@ -1,9 +1,8 @@
 var WORD_MAP;
 
 function loadWordMap(callback) {
-  console.log("//// loadWordMap ///");
   $.ajax({
-    url: "data/word_map.json"
+    url: "data/word-map.json"
   })
   .done(function(response) {
     WORD_MAP = response;

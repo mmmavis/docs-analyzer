@@ -1,2 +1,4 @@
 node_modules
 .env
+public/data/etherpads.json
+public/data/word-map.json

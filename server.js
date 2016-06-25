@@ -21,35 +21,12 @@ var ISSUES_FILENAME = 'public/data/issues.json';
 var WORD_CLOUD_CATEGORIES_FILENAME = 'public/data/word-cloud-categories.json';
 // output files
 var ETHERPADS_FILENAME = 'public/data/etherpads.json';
-var WORD_MAP_FILENAME = 'public/data/word_map.json';
+var WORD_MAP_FILENAME = 'public/data/word-map.json';
 
 // app configs
 app.use(express.static('public'));
 app.set('view engine', 'pug');
 app.set('view options', { pretty: true });
-
-var ETHERPAD_SLUGS = [
-  "mofolondon-mlnproductionbreakoutgroups",
-  "Londonrecommendedrestaurants",
-  "story",
-  "mofolondon-strategicplanvisualdesignforversion",
-  "mofo-wow",
-  "mofolondon-internetenabledevicesforlearning",
-  "mofolondon-openleadershipcurriculumpm",
-  "mofolondon-mozfestfuturegoals",
-  "mofolondon-commscouncilpmstart",
-  "mofolondon-mlnproductionshareouts",
-  "mozfest2016-mln",
-  "mofolondon-mozfestsciencehub",
-  "mofolondon-researchworkshopearlylearningsfromdso",
-  "mofolondon-sciencehplanning",
-  "mofolondon-mlnfundraisinggrantmanagement",
-  "mofolondon-mozfestmarketing",
-  "mofolondon-designvisionidentityprocess",
-  "mofolondon-mlnmetricsconvenings",
-  "mofo-communities",
-  "mofolondon-mozfestplan"
-];
 
 var etherpads = [];
 
@@ -119,12 +96,12 @@ function generateWordCount(callback) {
   });
 }
 
-generateJson(ETHERPAD_SLUGS);
+generateJson();
 
 // run every 15 mins
 var recurringTask = schedule.scheduleJob('*/15 * * * *', function(){
   etherpads = []; // reset etherpads
-  generateJson(ETHERPAD_SLUGS);
+  generateJson();
 });
 
 
