@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Online Privacy & Security",
+    "keyphrases": [ "online data", "safe", "protect", "company", "companies", "government", "ownership", "digital identity", "digital identities" ]
+  },
+  {
+    "name": "Innovation Open",
+    "keyphrases": [ "open source", "open standard", "product", "policy", "policies", "practice", "entrepreneurs", "innovate", "compete", "permission" ]
+  },
+  {
+    "name": "Decentralization",
+    "keyphrases": [ "technologies", "platforms", "interoperable", "standard", "system", "transfer of information", "content" ]
+  },
+  {
+    "name": "Web Literacy",
+    "keyphrases": [ "skills", "read", "write", "participate", "digital citizen", "consuming content", "creating" ]
+  },
+  {
+    "name": "Digital Inclusion",
+    "keyphrases": [ "access", "opportunity", "participate", "diversity" ]
+  }
+]

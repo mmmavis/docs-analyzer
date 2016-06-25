@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    block title
+      title Default title
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+    link(href="style.css" rel="stylesheet")
+    script(src="https://code.jquery.com/jquery-3.0.0.min.js"
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js")
+    block otherScript
+  body(class="page "+ (pageClass|| "hi" ))
+    div(id="wrapper")
+      nav
+        h1 hello there :D
+        a(href="/") keyphrase highlighter
+        a(href="word-cloud") word cloud
+
+      div(id="main")
+        block main
+          
+      footer quick side project, not small device friendly ;)
+    block bodyEndScripts
