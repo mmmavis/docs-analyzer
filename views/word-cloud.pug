@@ -1,0 +1,25 @@
+extends ./layout.pug
+
+block title
+  title Article Title
+block otherScript
+  script(src="https://d3js.org/d3.v3.min.js")
+  script(src="d3.layout.cloud.js")
+  //- https://github.com/davidmerfield/randomColor
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js" type="text/javascript")
+
+block main
+  div(id="word-cloud-nav")
+    ul
+      each category in categories
+        li
+          h3= category.name
+          div(class="keyphrases")
+            each keyphrase in category.keyphrases
+              div(class="keyphrase")= keyphrase
+  div(id="word-cloud-container" class="main-containers")
+    div(id="cloud")
+
+block bodyEndScripts
+  script(src="js/word-cloud.js")
+  script(src="js/word-cloud-footer.js")

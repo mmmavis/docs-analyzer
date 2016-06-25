@@ -17,7 +17,7 @@
     "watch:scss": "chokidar 'scss/**/*' -c 'npm run build:scss'",
     "copy-d3-cloud": "cp node_modules/d3-cloud/build/d3.layout.cloud.js public/d3.layout.cloud.js",
     "test": "npm-run-all test:**",
-    "test:scss": "stylelint 'app/**/*.scss' --syntax scss"
+    "test:scss": "stylelint '**/*.scss' --syntax scss"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "node-schedule": "^1.1.1",
     "npm-run-all": "^2.2.0",
     "postcss-cli-simple": "^1.0.1",
+    "pug": "^2.0.0-beta3",
     "request": "^2.72.0",
     "text-miner": "^1.0.5",
     "underscore": "^1.8.3"

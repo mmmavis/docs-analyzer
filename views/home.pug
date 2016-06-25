@@ -1,0 +1,38 @@
+extends ./layout.pug
+
+block title
+  title Article Title
+block otherScript
+  script(src="http://johannburkard.de/resources/Johann/jquery.highlight-5.js")
+
+block main
+  div(id="search-container" class="main-containers")
+    div(class="inner")
+      div(id="search-result")
+        div
+          span(id="match-num-found") 0 
+          span  matches found in 
+          span(id="etherpad-num-found")  
+          span  Etherpads
+          a(id="reset") RESET
+      div(id="search")
+        ul
+          each issue in issues
+            li(class="issue")
+              h3= issue.name
+              each keyphrase in issue.keyphrases
+                div(class="keyphrase")= keyphrase
+
+  div(id="etherpads-container" class="main-containers")
+    div(id="etherpad-result")
+      ul
+        each etherpad in etherpads
+          li(class="etherpad")
+            h3 SOURCES:
+              a(href=etherpad.originalUrl target="_blank")= etherpad.slug
+            div(class="content")!= etherpad.content.replace(/(\r\n|\n|\r)/gm,"<br/>")
+    
+
+block bodyEndScripts
+  script(src="js/home-footer.js")
+

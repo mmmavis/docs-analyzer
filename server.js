@@ -6,17 +6,27 @@ var jsonfile = require('jsonfile');
 var _ = require('underscore');
 var schedule = require('node-schedule');
 var tm = require('text-miner');
+var pug = require('pug');
+var path = require('path');
+var fs = require("fs");
 
 // load env vars from .env file
 habitat.load('./.env');
 var env = new habitat('', { port: 3000 });
 var PORT = env.get('port');
 
+// data source
+var ETHERPADS_SLUGS_FILENAME = 'public/data/etherpad-slugs.json';
+var ISSUES_FILENAME = 'public/data/issues.json';
+var WORD_CLOUD_CATEGORIES_FILENAME = 'public/data/word-cloud-categories.json';
+// output files
 var ETHERPADS_FILENAME = 'public/data/etherpads.json';
 var WORD_MAP_FILENAME = 'public/data/word_map.json';
 
 // app configs
 app.use(express.static('public'));
+app.set('view engine', 'pug');
+app.set('view options', { pretty: true });
 
 var ETHERPAD_SLUGS = [
   "mofolondon-mlnproductionbreakoutgroups",
@@ -63,12 +73,15 @@ function getPadContent(slug,callback) {
   );
 }
 
-function generateJson(list) {
+function generateJson() {
+  var file = __dirname + "/" + ETHERPADS_SLUGS_FILENAME;
+  var etherpadSlugs = JSON.parse(fs.readFileSync(file, 'utf8'));
+
   var counter = 0;
-  list.forEach(function(slug) {
+  etherpadSlugs.forEach(function(slug) {
     getPadContent(slug, function() {
       counter++;
-      if ( counter == list.length ) {
+      if ( counter == etherpadSlugs.length ) {
         jsonfile.writeFile(ETHERPADS_FILENAME, etherpads, {spaces: 4}, function (err) {
           if (err) console.error(err);
           console.log("[Updated] " + ETHERPADS_FILENAME);
@@ -108,24 +121,42 @@ function generateWordCount(callback) {
 
 generateJson(ETHERPAD_SLUGS);
 
-// run every 10 mins
-var recurringTask = schedule.scheduleJob('*/10 * * * *', function(){
+// run every 15 mins
+var recurringTask = schedule.scheduleJob('*/15 * * * *', function(){
   etherpads = []; // reset etherpads
   generateJson(ETHERPAD_SLUGS);
 });
 
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+  var templateFile = "home";
+  var data = {
+    issues: JSON.parse(fs.readFileSync(__dirname + "/" + ISSUES_FILENAME, 'utf8')),
+    etherpads: JSON.parse(fs.readFileSync(__dirname + "/" + ETHERPADS_FILENAME, 'utf8'))
+  };
+  data.pageClass = templateFile;
+
+  res.render(templateFile, data);
 });
 
+app.get('/word-cloud', function (req, res) {
+  var templateFile = "word-cloud";
+  var file = __dirname + "/" + WORD_CLOUD_CATEGORIES_FILENAME;
+  var data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  data.pageClass = templateFile;
+
+  res.render(templateFile, data);
+});
+
+
+// redirects
 app.get('/wordcloud', function (req, res) {
-  res.redirect('/word_cloud');
+  res.redirect('/word-loud');
+});
+app.get('/word_cloud', function (req, res) {
+  res.redirect('/word-cloud');
 });
 
-app.get('/word_cloud', function (req, res) {
-  res.sendFile(__dirname + '/word_cloud.html');
-});
 
 app.listen(PORT, function () {
   console.log('Example app listening on port ' + PORT);

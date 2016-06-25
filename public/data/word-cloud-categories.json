@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "name": "everything",
+      "keyphrases": [ "all words" ]
+    },
+    {
+      "name": "platforms / issues / programs",
+      "keyphrases": [ "Google", "Github", "gh", "chat", "etherpad", "discourse", "arduino", "slack", "youtube", "twitter", "makey", "literacy", "mln", "clubs", "wow", "iot", "inclusive" ]
+    },
+    {
+      "name": "people / distributed leadership",
+      "keyphrases": [ "members", "participants", "communities", "cohort", "users", "attendees", "students", "wranglers", "leaders", "captains", "follows", "coordinators", "partners", "facilitators", "mentors", "educators", "reserachers" ]
+    },
+    {
+      "name": "work together",
+      "keyphrases": [ "network", "networks", "connect", "connection", "feedback", "convening", "collaborate", "coordinate", "inviting", "interveiws", "pluse", "mentorship", "proposals", "takeaway", "onboarding", "practice", "roles", "consulted", "darci", "lessons", "metrics", "goals", "norming", "decider", "template", "accountable" ]
+    },
+    {
+      "name": "communication",
+      "keyphrases": [ "shared", "sharing", "email", "blog", "comms", "engaging", "conversations", "tweet", "emails", "documentation", "demystify", "+1", "guaranteed", "awesome", "gratitude", "excited", "opportnities", "yay" ]
+    },
+    {
+      "name": "the work continues",
+      "keyphrases": [ "challenges", "tbd" ]
+    }
+  ]
+}
