@@ -15,7 +15,7 @@
     "build:scss": "node-sass scss/style.scss public/style.css && postcss --use autoprefixer --autoprefixer.browsers 'last 3 versions' -o public/style.css public/style.css",
     "watch": "npm run watch:scss",
     "watch:scss": "chokidar 'scss/**/*' -c 'npm run build:scss'",
-    "copy-d3-cloud": "cp node_modules/d3-cloud/build/d3.layout.cloud.js public/d3.layout.cloud.js",
+    "copy-d3-cloud": "cp node_modules/d3-cloud/build/d3.layout.cloud.js public/js/lib/d3.layout.cloud.js",
     "test": "npm-run-all test:**",
     "test:scss": "stylelint '**/*.scss' --syntax scss"
   },
