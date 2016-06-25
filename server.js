@@ -15,9 +15,9 @@ var env = new habitat('', { port: 3000 });
 var PORT = env.get('port');
 
 // data source
-var ETHERPADS_SLUGS_FILENAME = 'public/data/etherpad-slugs.json';
-var ISSUES_FILENAME = 'public/data/issues.json';
-var WORD_CLOUD_CATEGORIES_FILENAME = 'public/data/word-cloud-categories.json';
+var ETHERPADS_SLUGS_FILENAME = 'public/data/source/etherpad-slugs.json';
+var ISSUES_FILENAME = 'public/data/source/issues.json';
+var WORD_CLOUD_CATEGORIES_FILENAME = 'public/data/source/word-cloud-categories.json';
 // output files
 var ETHERPADS_FILENAME = 'public/data/etherpads.json';
 var WORD_MAP_FILENAME = 'public/data/word-map.json';
@@ -56,8 +56,10 @@ function generateJson() {
   var counter = 0;
   etherpadSlugs.forEach(function(slug) {
     getPadContent(slug, function() {
+
       counter++;
       if ( counter == etherpadSlugs.length ) {
+        etherpads = _.sortBy(etherpads, "slug");
         jsonfile.writeFile(ETHERPADS_FILENAME, etherpads, {spaces: 4}, function (err) {
           if (err) console.error(err);
           console.log("[Updated] " + ETHERPADS_FILENAME);
@@ -85,7 +87,7 @@ function generateWordCount(callback) {
   var termsArray = terms.findFreqTerms(0).map(function(term) {
     return { text: term.word, size: term.count };
   }).filter(function(term) {
-    return tm.STOPWORDS.EN.indexOf(term.text) < 0 && term.text[term.text.length-1] != ".";
+    return tm.STOPWORDS.EN.indexOf(term.text.toLowerCase()) < 0 && term.text[term.text.length-1] != ".";
   });
   termsArray = _.sortBy(termsArray, 'size').reverse();
 

@@ -1,7 +1,14 @@
-$.ajax("data/word-cloud-categories.json")
+var wordsToSkip = [
+  "==========================================================================",
+  "__________________________"
+];
+
+$.ajax("data/source/word-cloud-categories.json")
   .done(function(cloudNavData) {
     $("#word-cloud-nav h3").on("click", function() {
-      var options = {};
+      var options = {
+        wordsToSkip: wordsToSkip
+      };
       $("#word-cloud-nav h3").removeClass("active");
       $(this).addClass("active");
 

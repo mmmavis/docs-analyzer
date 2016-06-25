@@ -1,4 +1,12 @@
+$search-container-width: 300px;
+$search-container-margin: 50px;
+$etherpads-container-gap-width: $search-container-width + $search-container-margin;
+$highlight-orange: adjust-hue($orange, 25);
+
 .page.home {
+  .highlight {
+    background: $highlight-orange;
+  }
   footer {
     color: lighten($orange, 40);
   }
@@ -7,24 +15,34 @@
 #search-container {
   background: #333;
   position: fixed;
-  width: 550px;
+  width: $search-container-width;
   height: 100%;
   color: $white;
 }
 
 #search {
-  h3 {
-    margin: 1rem 0 .5rem 0;
-  }
-  .keyphrase {
-    color: #ccc;
-    background: $grey;
-    border-radius: 3px;
-    cursor: pointer;
-    &.active,
-    &:hover {
-      color: $grey;
-      background: $white;
+  .issue {
+    margin: 1.5rem 0;
+    a.name {
+      display: inline-block;
+      color: #ccc;
+      background: $grey;
+      padding: .5rem 1rem;
+      border-radius: 3px;
+      cursor: pointer;
+      &.active,
+      &:hover {
+        color: $white;
+        background: $orange;
+      }
+    }
+    a.match {
+      display: inline-block;
+      margin: 0 .5rem 0 0;
+      cursor: pointer;
+      &:hover {
+        color: $highlight-orange;
+      }
     }
   }
 }
@@ -47,17 +65,10 @@
   }
 }
 
-#search {
-  h3 {
-    margin: 1rem 0 .5rem 0;
-  }
-}
-
-
 #etherpads-container {
-  width: calc(100% - 650px);
-  margin-left: 600px;
+  margin-left: $etherpads-container-gap-width;
   padding-top: 0;
+  word-wrap: break-word;
   // height: 500px;
   // overflow-x: hidden;
   // overflow-y: scroll;
@@ -65,12 +76,9 @@
 
 .etherpad {
   padding: 2rem;
-  // &:nth-child(2n+1) {
-  //   background: #ccc;
-  // }
   h3 {
     padding: .5rem 1rem;
-    background: $orange;
+    background: $highlight-orange;
     margin-top: 0;
     color: $grey;
     border-radius: 3px;
@@ -83,6 +91,6 @@
     }
   }
   .content {
-    margin-left: 30px;
+    margin-left: 1rem;
   }
 }

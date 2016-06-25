@@ -19,19 +19,17 @@ block main
         ul
           each issue in issues
             li(class="issue")
-              h3= issue.name
-              each keyphrase in issue.keyphrases
-                div(class="keyphrase")= keyphrase
+              a(class="name" data-issue=issue.name data-keyphrases=issue.keyphrases.join(","))= issue.name
+              div(class="matches")
 
   div(id="etherpads-container" class="main-containers")
     div(id="etherpad-result")
       ul
         each etherpad in etherpads
           li(class="etherpad")
-            h3 SOURCES:
+            h3 SOURCE:
               a(href=etherpad.originalUrl target="_blank")= etherpad.slug
             div(class="content")!= etherpad.content.replace(/(\r\n|\n|\r)/gm,"<br/>")
-    
 
 block bodyEndScripts
   script(src="js/home-footer.js")

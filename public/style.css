@@ -1,24 +1,34 @@
+.page.home .highlight {
+  background: #ffa600; }
+
 .page.home footer {
   color: #ffd8cc; }
 
 #search-container {
   background: #333;
   position: fixed;
-  width: 550px;
+  width: 300px;
   height: 100%;
   color: #fff; }
 
-#search h3 {
-  margin: 1rem 0 .5rem 0; }
-
-#search .keyphrase {
-  color: #ccc;
-  background: #555;
-  border-radius: 3px;
-  cursor: pointer; }
-  #search .keyphrase.active, #search .keyphrase:hover {
-    color: #555;
-    background: #fff; }
+#search .issue {
+  margin: 1.5rem 0; }
+  #search .issue a.name {
+    display: inline-block;
+    color: #ccc;
+    background: #555;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer; }
+    #search .issue a.name.active, #search .issue a.name:hover {
+      color: #fff;
+      background: #ff3c00; }
+  #search .issue a.match {
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+    cursor: pointer; }
+    #search .issue a.match:hover {
+      color: #ffa600; }
 
 #search-result {
   color: #ff3c00; }
@@ -35,19 +45,16 @@
   #reset:hover {
     background: #256c67; }
 
-#search h3 {
-  margin: 1rem 0 .5rem 0; }
-
 #etherpads-container {
-  width: calc(100% - 650px);
-  margin-left: 600px;
-  padding-top: 0; }
+  margin-left: 350px;
+  padding-top: 0;
+  word-wrap: break-word; }
 
 .etherpad {
   padding: 2rem; }
   .etherpad h3 {
     padding: .5rem 1rem;
-    background: #ff3c00;
+    background: #ffa600;
     margin-top: 0;
     color: #555;
     border-radius: 3px; }
@@ -57,7 +64,7 @@
       .etherpad h3 a:hover {
         color: #fff; }
   .etherpad .content {
-    margin-left: 30px; }
+    margin-left: 1rem; }
 
 #word-cloud-nav,
 #word-cloud-container {
@@ -268,9 +275,6 @@ ul {
 
 h1 {
   margin-top: 0; }
-
-.highlight {
-  background: #ff8a66; }
 
 #wrapper {
   overflow: hidden; }
