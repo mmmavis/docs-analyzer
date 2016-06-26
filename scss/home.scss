@@ -1,4 +1,4 @@
-$search-container-width: 300px;
+$search-container-width: 450px;
 $search-container-margin: 50px;
 $etherpads-container-gap-width: $search-container-width + $search-container-margin;
 $highlight-orange: adjust-hue($orange, 25);
@@ -43,6 +43,14 @@ $highlight-orange: adjust-hue($orange, 25);
       &:hover {
         color: $highlight-orange;
       }
+    }
+  }
+  .issue:nth-child(5) {
+    &:after {
+      display: block;
+      content: "";
+      border-bottom: 1px solid $grey;
+      margin-top: 1.5rem;
     }
   }
 }

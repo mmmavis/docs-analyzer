@@ -70,5 +70,58 @@
       "participate",
       "diversity"
     ]
+  },
+  {
+    "name": "People & Leadership",
+    "keyphrases": [
+      "member",
+      "participant",
+      "community",
+      "communities",
+      "cohort",
+      "user",
+      "attendee",
+      "student",
+      "wrangler",
+      "leader",
+      "fellow",
+      "coordinator",
+      "partner",
+      "facilitator",
+      "mentor",
+      "educator",
+      "researcher"
+    ]
+  },
+  {
+    "name": "Collaboration",
+    "keyphrases": [
+      "network",
+      "connect",
+      "feedback",
+      "convening",
+      "event",
+      "collaborate",
+      "collaborative",
+      "coordinate",
+      "inviting",
+      "interview",
+      "pulse",
+      "mentorship",
+      "proposal",
+      "takeaway",
+      "onboarding",
+      "practice",
+      "role",
+      "consulted",
+      "darci",
+      "lesson",
+      "metric",
+      "goal",
+      "norming",
+      "decider",
+      "template",
+      "accountable"
+    ]
   }
 ]

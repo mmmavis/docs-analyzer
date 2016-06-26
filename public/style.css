@@ -7,7 +7,7 @@
 #search-container {
   background: #333;
   position: fixed;
-  width: 300px;
+  width: 450px;
   height: 100%;
   color: #fff; }
 
@@ -30,6 +30,12 @@
     #search .issue a.match:hover {
       color: #ffa600; }
 
+#search .issue:nth-child(5):after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #555;
+  margin-top: 1.5rem; }
+
 #search-result {
   color: #ff3c00; }
 
@@ -46,7 +52,7 @@
     background: #256c67; }
 
 #etherpads-container {
-  margin-left: 350px;
+  margin-left: 500px;
   padding-top: 0;
   word-wrap: break-word; }
 
