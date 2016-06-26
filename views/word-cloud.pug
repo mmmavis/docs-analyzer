@@ -3,10 +3,9 @@ extends ./layout.pug
 block title
   title Word Cloud
 block otherScript
+  link(href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet")
   script(src="https://d3js.org/d3.v3.min.js")
   script(src="js/lib/d3.layout.cloud.js")
-  //- https://github.com/davidmerfield/randomColor
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js" type="text/javascript")
 
 block main
   div(id="word-cloud-nav")

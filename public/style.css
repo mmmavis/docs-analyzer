@@ -66,13 +66,17 @@
   .etherpad .content {
     margin-left: 1rem; }
 
+.page.word-cloud #main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 #word-cloud-nav,
 #word-cloud-container {
   float: left; }
 
 #word-cloud-nav {
-  width: 350px;
-  margin-right: 3rem; }
+  width: 350px; }
   #word-cloud-nav ul li h3,
   #word-cloud-nav ul li .keyphrases {
     padding-left: 2rem;
@@ -256,7 +260,7 @@
 
 #word-cloud-container {
   box-sizing: border-box;
-  width: calc( 100% - 400px);
+  width: 100%;
   text-align: center; }
 
 html {

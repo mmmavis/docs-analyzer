@@ -1,3 +1,9 @@
+.page.word-cloud {
+  #main {
+    display: flex;
+  }
+}
+
 #word-cloud-nav,
 #word-cloud-container {
   float: left;
@@ -6,7 +12,6 @@
 
 #word-cloud-nav {
   width: 350px;
-  margin-right: 3rem;
   ul {
     li {
       h3,
@@ -47,6 +52,6 @@
 
 #word-cloud-container {
   box-sizing: border-box;
-  width: calc( 100% - 400px );
+  width: 100%;
   text-align: center;
 }
