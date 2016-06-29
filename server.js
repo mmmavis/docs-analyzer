@@ -99,8 +99,8 @@ function generateWordCount(callback) {
 
 generateJson();
 
-// run every 15 mins
-var recurringTask = schedule.scheduleJob('*/15 * * * *', function(){
+// runs every 30 mins
+var recurringTask = schedule.scheduleJob('*/30 * * * *', function(){
   etherpads = []; // reset etherpads
   generateJson();
 });

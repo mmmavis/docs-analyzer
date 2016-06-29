@@ -58,7 +58,7 @@ function makeCloud(options, threshold) {
   function drawCloud(words) {
     d3.select('#cloud').html("").append('svg')
       .attr('width', WIDTH).attr('height', HEIGHT)
-      .attr("viewBox", "-500 -300 " + WIDTH + " " + HEIGHT)
+      .attr("viewBox", -(WIDTH/2) + " " + -(HEIGHT/2) + " " + WIDTH + " " + HEIGHT)
       .append('g')
       .selectAll('text')
       .data(words)
@@ -86,6 +86,9 @@ function makeCloud(options, threshold) {
       })
       .text(function(d) { return d.text; });
   }
+
+  $("#word-cloud-container .loading").hide();
+  $("#cloud").show();
 
 }
 

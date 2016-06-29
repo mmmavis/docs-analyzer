@@ -4,12 +4,6 @@
   }
 }
 
-#word-cloud-nav,
-#word-cloud-container {
-  float: left;
-}
-
-
 #word-cloud-nav {
   width: 350px;
   ul {
@@ -54,4 +48,8 @@
   box-sizing: border-box;
   width: 100%;
   text-align: center;
+  .loading {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
 }
