@@ -1,3 +1,5 @@
+$("#search-result .help-text").show();
+$("#search-result .status").hide();
 $("#etherpad-num-found").text($(".etherpad:visible").length);
 
 var issueHighlighter = function(event) {
@@ -36,12 +38,13 @@ var issueHighlighter = function(event) {
 
 $("#reset").on('click', function() {
   resetHighlight();
-
   // make all Etherpads visible
   $(".etherpad").show();
-
   // update num of matches
   updateNumOfMatches();
+  // toggle status and help-text accordingly
+  $("#search-result .help-text").show();
+  $("#search-result .status").hide();
 });
 
 function resetHighlight() {
@@ -60,6 +63,9 @@ function updateNumOfMatches() {
   // update num of matches
   $("#match-num-found").text($(".highlight").length);
   $("#etherpad-num-found").text($(".etherpad:visible").length);
+  // toggle status and help-text accordingly
+  $("#search-result .help-text").hide();
+  $("#search-result .status").show();
 }
 
 $(".issue a").on("click", issueHighlighter);

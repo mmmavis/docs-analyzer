@@ -38,6 +38,9 @@
 
 #search-result {
   color: #ff3c00; }
+  #search-result .status,
+  #search-result .help-text {
+    display: inline-block; }
 
 #reset {
   display: inline-block;
