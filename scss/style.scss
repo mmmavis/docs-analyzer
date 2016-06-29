@@ -31,6 +31,7 @@ h1 {
   // align-items: flex-start;
   // flex: 1 auto;
   // justify-content: center;
+  padding-bottom:2rem;
 }
 
 nav {
@@ -84,3 +85,13 @@ footer {
   margin: 0 3px 5px 0;
   padding: 2px 5px;
 }
+
+.content {
+  width:100%;
+  max-width:600px;
+  margin:0 auto 2rem;
+  padding:1rem 2rem 2rem;
+  background:#eee;
+}
+
+
