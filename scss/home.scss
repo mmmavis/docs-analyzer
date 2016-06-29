@@ -1,6 +1,5 @@
 $search-container-width: 450px;
-$search-container-margin: 50px;
-$etherpads-container-gap-width: $search-container-width + $search-container-margin;
+$etherpads-container-gap-width: calc( #{$search-container-width} + #{$container-padding} *2 );
 $highlight-orange: adjust-hue($orange, 25);
 
 .page.home {
@@ -78,16 +77,53 @@ $highlight-orange: adjust-hue($orange, 25);
 }
 
 #etherpads-container {
+  position: relative;
   margin-left: $etherpads-container-gap-width;
   padding-top: 0;
   word-wrap: break-word;
-  // height: 500px;
-  // overflow-x: hidden;
-  // overflow-y: scroll;
+  .scanner {
+    position: fixed;
+    top: $container-padding * 2;
+    right: 0;
+    content: "";
+    height: 1.5rem;
+    width: calc( 100% - ( 450px + 2rem *2)); // 100% - $etherpads-container-gap-width
+    background: green;
+    filter: blur(5px);
+    visibility: hidden;
+    z-index: 1000000;
+    animation-duration: 1s;
+    animation-name: scan-down;
+    animation-iteration-count: 1;
+  }
+
+  .scanner-mask {
+    position: absolute;
+    left: 0;
+    background: $black;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+  }
+}
+
+
+@keyframes scan-down {
+  from {
+    visibility: visible;
+    opacity: 1;
+    top: $container-padding * 2;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+    top: 1200px;
+  }
 }
 
 .etherpad {
-  padding: 2rem;
+  padding: $container-padding;
   h3 {
     padding: .5rem 1rem;
     background: $highlight-orange;

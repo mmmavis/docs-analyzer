@@ -2,38 +2,49 @@ $("#search-result .help-text").show();
 $("#search-result .status").hide();
 $("#etherpad-num-found").text($(".etherpad:visible").length);
 
+$(".scanner-mask").hide();
+
 var issueHighlighter = function(event) {
-  resetHighlight();
+  $("#etherpads-container .scanner").remove();
+  $("#etherpads-container").prepend("<div class='scanner'></div>");
+  $(".scanner-mask").show();
 
   var $selected = $(this);
 
-  var keyphrases = $selected.data("keyphrases").split(",");
-  if ( !$selected.hasClass("active") ) {
-    keyphrases.forEach(function(keyphrase) {
-      $(".etherpad").highlight(keyphrase);
+  // wait for scanning animation to finish first
+  setTimeout(function(){
+    $(".scanner-mask").hide();
+
+    resetHighlight();
+
+    var keyphrases = $selected.data("keyphrases").split(",");
+    if ( !$selected.hasClass("active") ) {
+      keyphrases.forEach(function(keyphrase) {
+        $(".etherpad").highlight(keyphrase);
+      });
+    }
+    $selected.addClass("active");
+
+    // hide etherpads with no match
+    $(".etherpad").hide();
+    $(".highlight").parents(".etherpad").show();
+
+    // update num of matches
+    updateNumOfMatches();
+
+    $(".highlight").each(function() {
+      var $dot = $("<a class='match'>&#9632;</a>");
+      $dot.on("click", function() {
+        var index = $selected.parents(".issue").find(".match").index($(this));
+        $("html, body").animate({
+          scrollTop: $(".highlight").eq(index).offset().top - 50
+        }, 600);
+      });
+
+      $selected.parents(".issue").find(".matches").append($dot);
     });
-  }
-  $selected.addClass("active");
 
-  // hide etherpads with no match
-  $(".etherpad").hide();
-  $(".highlight").parents(".etherpad").show();
-
-  // update num of matches
-  updateNumOfMatches();
-
-  $(".highlight").each(function() {
-    var $dot = $("<a class='match'>&#9632;</a>");
-    $dot.on("click", function() {
-      var index = $selected.parents(".issue").find(".match").index($(this));
-      $("html, body").animate({
-        scrollTop: $(".highlight").eq(index).offset().top - 50
-      }, 600);
-    });
-
-    $selected.parents(".issue").find(".matches").append($dot);
-  });
-
+  }, 1000);
 };
 
 $("#reset").on('click', function() {

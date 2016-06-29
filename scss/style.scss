@@ -38,7 +38,7 @@ nav {
   background: $black;
   color: $white;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1rem $container-padding;
   text-align: right;
   z-index: 1000;
   box-sizing: border-box;
@@ -66,8 +66,8 @@ nav {
 
 footer {
   position: fixed;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: $container-padding;
+  left: $container-padding;
 }
 
 #main {
@@ -76,7 +76,7 @@ footer {
 
 .main-containers {
   // float: left;
-  padding: 2rem;
+  padding: $container-padding;
 }
 
 .keyphrase {

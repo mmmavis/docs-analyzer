@@ -16,8 +16,8 @@
     li {
       h3,
       .keyphrases {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: $container-padding;
+        padding-right: $container-padding;
       }
       h3 {
         background: $black;
