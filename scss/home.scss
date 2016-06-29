@@ -57,6 +57,10 @@ $highlight-orange: adjust-hue($orange, 25);
 
 #search-result {
   color: $orange;
+  .status,
+  .help-text {
+    display: inline-block;
+  }
 }
 
 #reset {

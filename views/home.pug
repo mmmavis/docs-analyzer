@@ -7,19 +7,20 @@ block otherScript
 
 block main
   div(id="search-container" class="main-containers")
-    div(class="inner")
+    div(class="search-control")
       div(id="search-result")
-        div
+        div(class="status")
           span(id="match-num-found") 0 
           span  matches found in 
           span(id="etherpad-num-found")  
           span  Etherpads
-          a(id="reset") RESET
+        div(class="help-text") Tap a filter below, then browse the results on the right.
+        a(id="reset") RESET
       div(id="search")
         ul
           each issue in issues
             li(class="issue")
-              a(class="name" data-issue=issue.name data-keyphrases=issue.keyphrases.join(","))= issue.name
+              a(class="name" title=issue.keyphrases.join(", ") data-issue=issue.name data-keyphrases=issue.keyphrases.join(","))= issue.name
               div(class="matches")
 
   div(id="etherpads-container" class="main-containers")
