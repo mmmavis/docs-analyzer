@@ -1,3 +1,5 @@
+var SCROLL_OFFSET = 50;
+
 $("#search-result .help-text").show();
 $("#search-result .status").hide();
 $("#etherpad-num-found").text($(".etherpad:visible").length);
@@ -25,9 +27,14 @@ var issueHighlighter = function(event) {
     }
     $selected.addClass("active");
 
-    // hide etherpads with no match
+    // hide etherpads with no match and show etherpads with matches
     $(".etherpad").hide();
     $(".highlight").parents(".etherpad").show();
+
+    // scroll to the first match
+    $("html, body").animate({
+      scrollTop: getScrollPosition($(".highlight").eq(0))
+    });
 
     // update num of matches
     updateNumOfMatches();
@@ -37,7 +44,7 @@ var issueHighlighter = function(event) {
       $dot.on("click", function() {
         var index = $selected.parents(".issue").find(".match").index($(this));
         $("html, body").animate({
-          scrollTop: $(".highlight").eq(index).offset().top - 50
+          scrollTop: getScrollPosition($(".highlight").eq(index))
         }, 600);
       });
 
@@ -77,6 +84,10 @@ function updateNumOfMatches() {
   // toggle status and help-text accordingly
   $("#search-result .help-text").hide();
   $("#search-result .status").show();
+}
+
+function getScrollPosition($elem) {
+  return $elem.offset().top - SCROLL_OFFSET;
 }
 
 $(".issue a").on("click", issueHighlighter);
