@@ -41,17 +41,13 @@ var issueHighlighter = function(event) {
     // update num of matches
     updateNumOfMatches();
 
-    // nav hightlights
-    highlightIndex = 0; 
-    highlightCount = $(".highlight").length - 1;
-
   }, 200);
 };
 
 function scrollToHighlight(highlightIndex) {
   // todo display 1 of ...
-  var displayCount = highlightIndex + 1;
-  $("#match-index").text(displayCount);
+  var highlightCurrent = highlightIndex + 1;
+  $("#match-index").text(highlightCurrent);
   var newPosition = getScrollPosition($(".highlight").eq(highlightIndex));
   $("html, body").animate({
     scrollTop: newPosition
@@ -84,12 +80,18 @@ function resetHighlight() {
 }
 
 function updateNumOfMatches() {
+  highlightIndex = 0; 
+  var highlightLength = $(".highlight").length;
+  highlightCount = highlightLength - 1;
   // update num of matches
-  $("#match-num-found").text($(".highlight").length);
+  $("#match-num-found").text(highlightLength);
   $("#etherpad-num-found").text($(".etherpad:visible").length);
   // toggle status and help-text accordingly
   $("#search-result .help-text").hide();
   $("#search-result .status").show();
+  // nav hightlights
+  var highlightCurrent = highlightIndex + 1;
+  $("#match-index").text(highlightCurrent);
 }
 
 function getScrollPosition($elem) {
