@@ -1,4 +1,4 @@
-var SCROLL_OFFSET = 50;
+var SCROLL_OFFSET = 150;
 var highlightIndex = 0, highlightCount = 0;
 
 $("#search-result .help-text").show();
@@ -33,7 +33,7 @@ var issueHighlighter = function(event) {
     $(".highlight").parents(".etherpad").show();
 
     // scroll to the first match
-    var newPosition = getScrollPosition($(".highlight").eq(0)) - 100;
+    var newPosition = getScrollPosition($(".highlight").eq(0));
     $("html, body").animate({
       scrollTop: newPosition
     });
@@ -43,7 +43,7 @@ var issueHighlighter = function(event) {
 
     // nav hightlights
     highlightIndex = 0; 
-    highlightCount = $(".highlight").length -1;
+    highlightCount = $(".highlight").length - 1;
 
   }, 200);
 };
@@ -52,7 +52,7 @@ function scrollToHighlight(highlightIndex) {
   // todo display 1 of ...
   var displayCount = highlightIndex + 1;
   $("#match-index").text(displayCount);
-  var newPosition = getScrollPosition($(".highlight").eq(highlightIndex)) - 100;
+  var newPosition = getScrollPosition($(".highlight").eq(highlightIndex));
   $("html, body").animate({
     scrollTop: newPosition
   }, 600);      

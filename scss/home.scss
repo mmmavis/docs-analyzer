@@ -34,7 +34,8 @@ $highlight-orange: adjust-hue($orange, 25);
       cursor: pointer;
       &:hover {
         opacity: 1; 
-        background: $gecko-green;
+        color: darken($gecko-green, 30%);
+        background: lighten($gecko-green, 30%);
       }
       &:active {
         opacity: 1; 
@@ -43,8 +44,7 @@ $highlight-orange: adjust-hue($orange, 25);
     }
     a.active {
         opacity: 1; 
-        color: darken($gecko-green, 30%);
-        background: lighten($gecko-green, 30%);
+        background: $gecko-green;
       }
     a.match {
       display: inline-block;
