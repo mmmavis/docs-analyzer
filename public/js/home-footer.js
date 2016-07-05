@@ -1,21 +1,22 @@
 var SCROLL_OFFSET = 50;
+var highlightIndex = 0, highlightCount = 0;
 
 $("#search-result .help-text").show();
 $("#search-result .status").hide();
 $("#etherpad-num-found").text($(".etherpad:visible").length);
 
-$(".scanner-mask").hide();
+// $(".scanner-mask").hide();
 
 var issueHighlighter = function(event) {
-  $("#etherpads-container .scanner").remove();
-  $("#etherpads-container").prepend("<div class='scanner'></div>");
-  $(".scanner-mask").show();
+  // $("#etherpads-container .scanner").remove();
+  // $("#etherpads-container").prepend("<div class='scanner'></div>");
+  // $(".scanner-mask").show();
 
   var $selected = $(this);
 
   // wait for scanning animation to finish first
   setTimeout(function(){
-    $(".scanner-mask").hide();
+    // $(".scanner-mask").hide();
 
     resetHighlight();
 
@@ -32,27 +33,31 @@ var issueHighlighter = function(event) {
     $(".highlight").parents(".etherpad").show();
 
     // scroll to the first match
+    var newPosition = getScrollPosition($(".highlight").eq(0)) - 100;
     $("html, body").animate({
-      scrollTop: getScrollPosition($(".highlight").eq(0))
+      scrollTop: newPosition
     });
 
     // update num of matches
     updateNumOfMatches();
 
-    $(".highlight").each(function() {
-      var $dot = $("<a class='match'>&#9632;</a>");
-      $dot.on("click", function() {
-        var index = $selected.parents(".issue").find(".match").index($(this));
-        $("html, body").animate({
-          scrollTop: getScrollPosition($(".highlight").eq(index))
-        }, 600);
-      });
+    // nav hightlights
+    highlightIndex = 0; 
+    highlightCount = $(".highlight").length -1;
 
-      $selected.parents(".issue").find(".matches").append($dot);
-    });
-
-  }, 1000);
+  }, 200);
 };
+
+function scrollToHighlight(highlightIndex) {
+  // todo display 1 of ...
+  var displayCount = highlightIndex + 1;
+  $("#match-index").text(displayCount);
+  var newPosition = getScrollPosition($(".highlight").eq(highlightIndex)) - 100;
+  $("html, body").animate({
+    scrollTop: newPosition
+  }, 600);      
+}
+
 
 $("#reset").on('click', function() {
   resetHighlight();
@@ -75,6 +80,7 @@ function resetHighlight() {
   }, 200);
   // remove all the "match dot"
   $(".match").remove();
+  $(".etherpad-nav").hide();
 }
 
 function updateNumOfMatches() {
@@ -91,3 +97,22 @@ function getScrollPosition($elem) {
 }
 
 $(".issue a").on("click", issueHighlighter);
+
+
+function handleHighlightNav() {
+  var $prev = $("#etherpad-nav .prev");
+  var $next = $("#etherpad-nav .next");
+
+  $prev.on("click", function(){
+      highlightIndex -= 1;
+      if (highlightIndex < 0) { highlightIndex = highlightCount; }
+      scrollToHighlight(highlightIndex);
+  });    
+  $next.on("click", function(){
+      highlightIndex += 1;
+      if (highlightIndex > highlightCount) { highlightIndex = 0; }
+      scrollToHighlight(highlightIndex);
+  });
+}
+handleHighlightNav();
+
