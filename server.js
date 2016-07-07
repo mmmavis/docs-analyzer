@@ -126,6 +126,13 @@ app.get('/word-cloud', function (req, res) {
   res.render(templateFile, data);
 });
 
+app.get('/overview', function (req, res) {
+  var templateFile = "overview";
+  var data = {};
+  data.pageClass = templateFile;
+  res.render(templateFile, data);
+});
+
 
 // redirects
 app.get('/wordcloud', function (req, res) {
