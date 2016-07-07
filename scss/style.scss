@@ -11,6 +11,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
   margin: 0;
+  font-weight:100;
 }
 
 ul {
@@ -34,9 +35,9 @@ h1 {
   padding-bottom:2rem;
 }
 
-nav {
+#site-nav {
   position: fixed;
-  background: $black;
+  background: $gecko-green;
   color: $white;
   width: 100%;
   padding: 1rem $container-padding;
@@ -50,17 +51,14 @@ nav {
     line-height: 0.9;
   }
   a {
-    color: $white;
-    font-weight: 800;
+    display: inline-block;
+    color: rgba($white, 0.75);
+    font-weight: 100;
     text-transform: uppercase;
     text-decoration: none;
-    &:not(:last-child):after {
-      margin: 0 1rem;
-      content: "//";
-      color: $grey;
-    }
+    margin: 0 1rem;
     &:hover {
-      color: $turquoise;
+      color:$white;
     }
   }
 }
@@ -86,7 +84,7 @@ footer {
   padding: 2px 5px;
 }
 
-.content {
+.overview .content {
   width:100%;
   max-width:600px;
   margin:0 auto 2rem;

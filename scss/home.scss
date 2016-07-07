@@ -1,5 +1,5 @@
-$search-container-width: 450px;
-$etherpads-container-gap-width: calc( #{$search-container-width} + #{$container-padding} *2 );
+$search-container-width: 240px;
+$etherpads-container-gap-width: calc( #{$search-container-width} + #{$container-padding} );
 $highlight-orange: adjust-hue($orange, 25);
 
 .page.home {
@@ -12,29 +12,40 @@ $highlight-orange: adjust-hue($orange, 25);
 }
 
 #search-container {
-  background: #333;
+  background: darken($gecko-green, 15%);
   position: fixed;
   width: $search-container-width;
   height: 100%;
   color: $white;
+  z-index: 11;
 }
 
 #search {
   .issue {
+    position: relative; 
     margin: 1.5rem 0;
     a.name {
       display: inline-block;
-      color: #ccc;
-      background: $grey;
+      color: $white;
+      background: darken($gecko-green,30%);
       padding: .5rem 1rem;
-      border-radius: 3px;
+      border-radius: 2px;
+      opacity: .9;
       cursor: pointer;
-      &.active,
       &:hover {
-        color: $white;
-        background: $orange;
+        opacity: 1; 
+        color: darken($gecko-green, 30%);
+        background: lighten($gecko-green, 30%);
+      }
+      &:active {
+        opacity: 1; 
+        background: $market-orange;
       }
     }
+    a.active {
+        opacity: 1; 
+        background: $gecko-green;
+      }
     a.match {
       display: inline-block;
       margin: 0 .5rem 0 0;
@@ -43,44 +54,90 @@ $highlight-orange: adjust-hue($orange, 25);
         color: $highlight-orange;
       }
     }
+    .tooltip {
+      display: none;
+      position: absolute;
+      background: rgba(0,0,0,0.75);
+      top: 2.5rem;
+      left: 100px;
+      width: 300px;
+      z-index: 101;
+      padding: .5em;
+      border-radius: 2px;
+    }
+    &:hover .tooltip {
+      display: block;
+    }
   }
   .issue:nth-child(5) {
     &:after {
       display: block;
       content: "";
-      border-bottom: 1px solid $grey;
+      border-bottom: 1px solid darken($gecko-green, 20%);
       margin-top: 1.5rem;
     }
   }
 }
 
-#search-result {
-  color: $orange;
-  .status,
-  .help-text {
-    display: inline-block;
+#etherpad-nav {
+  position: fixed;
+  display: flex;
+  top: 60px;
+  left: 290px;
+  background: $flame-yellow;
+  padding: 0 1rem;
+  border-radius: 2px;
+  #search-result {
+    line-height: 4rem;
+    margin-right: 1rem;
+    color: darken($flame-yellow,30%);
+    .status,
+    .help-text {
+      display: inline-block;
+    }
+  }
+  nav {
+  }
+  button { 
+    margin: .25em;
+    font-size: 3rem;
+    line-height: .5em;
+    color: lighten($flame-yellow, 30%);
+    background: darken($flame-yellow,15%);
+    border:0;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 50%;
+    padding: .1em .3em .25em;
+    vertical-align: -.1em;
+    cursor: pointer;
+    &:hover {
+      color: lighten($flame-yellow, 50%);
+      background: lighten($flame-yellow, 30%);
+    }
   }
 }
 
 #reset {
   display: inline-block;
-  border: 1px solid #000;
-  padding: 0px 5px;
-  border-radius: 3px;
-  color: #000;
-  background: $turquoise;
+  font-size: .8em;
+  border: 1px solid $white;
+  padding: .5rem 1rem;
+  border-radius: 2px;
+  color: $white;
   cursor: pointer;
-  float: right;
+  opacity: .8;
   &:hover {
-    background: darken($turquoise, 20);
+    opacity: 1;
   }
 }
 
 #etherpads-container {
   position: relative;
   margin-left: $etherpads-container-gap-width;
-  padding-top: 0;
+  padding-top: 80px;
   word-wrap: break-word;
+/* 
   .scanner {
     position: fixed;
     top: $container-padding * 2;
@@ -104,10 +161,11 @@ $highlight-orange: adjust-hue($orange, 25);
     width: 100%;
     height: 100%;
     opacity: .5;
-  }
+  } 
+*/
 }
 
-
+/*
 @keyframes scan-down {
   from {
     visibility: visible;
@@ -121,20 +179,25 @@ $highlight-orange: adjust-hue($orange, 25);
     top: 1200px;
   }
 }
+*/
 
 .etherpad {
-  padding: $container-padding;
+  /* padding: $container-padding; */
+  margin:2rem 2rem 4rem; 
+  box-shadow: 0 -2px 8px 1px rgba(0, 0, 0, 0.12);
+  max-width:900px;
   h3 {
-    padding: .5rem 1rem;
-    background: $highlight-orange;
+    padding: .5rem 1.5rem .67rem;
+    background: darken($market-orange, 30%);
     margin-top: 0;
-    color: $grey;
-    border-radius: 3px;
+    color: $white;
+    display: inline-block;
+    border-radius: 0 0 6px 0;
     a {
-      color: $black;
-      margin-left: 1rem;
+      color: $white;
+      text-decoration:none;
       &:hover {
-        color: $white;
+        text-decoration:underline;
       }
     }
   }
@@ -142,3 +205,5 @@ $highlight-orange: adjust-hue($orange, 25);
     margin-left: 1rem;
   }
 }
+
+

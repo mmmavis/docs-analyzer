@@ -8,28 +8,34 @@ block otherScript
 block main
   div(id="search-container" class="main-containers")
     div(class="search-control")
-      div(id="search-result")
-        div(class="status")
-          span(id="match-num-found") 0 
-          span  matches found in 
-          span(id="etherpad-num-found")  
-          span  Etherpads
-        div(class="help-text") Tap a filter below, then browse the results on the right.
-        a(id="reset") RESET
       div(id="search")
         ul
           each issue in issues
             li(class="issue")
-              a(class="name" title=issue.keyphrases.join(", ") data-issue=issue.name data-keyphrases=issue.keyphrases.join(","))= issue.name
-              div(class="matches")
+              a(class="name" data-issue=issue.name data-keyphrases=issue.keyphrases.join(","))= issue.name
+              div(class="tooltip")= "Keywords: " + issue.keyphrases.join(", ") 
+          li
+            a(id="reset" title="Show all etherpads") Reset
 
   div(id="etherpads-container" class="main-containers")
+    div(id="etherpad-nav")
+      div(id="search-result")
+        div(class="status")
+          button(class="prev") &lsaquo;
+          span(id="match-index") 1 
+          span  of 
+          span(id="match-num-found") 0 
+          button(class="next") &rsaquo;
+          span  matches found in 
+          span(id="etherpad-num-found")  
+          span  Etherpads
+        div(class="help-text") Tap a topic on the left to filter etherpads below.
     div(id="etherpad-result")
       div(class="scanner-mask")
       ul
         each etherpad in etherpads
           li(class="etherpad")
-            h3 SOURCE:
+            h3
               a(href=etherpad.originalUrl target="_blank")= etherpad.slug
             div(class="content")!= etherpad.content.replace(/(\r\n|\n|\r)/gm,"<br/>")
 

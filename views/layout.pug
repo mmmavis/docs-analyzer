@@ -13,14 +13,14 @@ html
     block otherScript
   body(class="page "+ (pageClass|| "hi" ))
     div(id="wrapper")
-      nav
-        h1 hello there :D
+      nav(id="site-nav")
+        h1 Documentation Insights
         a(href="overview") overview
-        a(href="/") keyphrase highlighter
+        a(href="/") browse
         a(href="word-cloud") word cloud
 
       div(id="main")
         block main
           
-      footer quick side project, not small device friendly ;)
+      footer
     block bodyEndScripts
