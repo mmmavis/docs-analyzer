@@ -3,7 +3,7 @@ $etherpads-container-gap-width: calc( #{$search-container-width} + #{$container-
 $highlight-orange: adjust-hue($orange, 25);
 
 .page.home {
-  .highlight {
+  .marked {
     background: $highlight-orange;
   }
   footer {

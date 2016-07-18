@@ -1,4 +1,10 @@
 var SCROLL_OFFSET = 150;
+var MARK_OPTIONS = {
+  // see docs on https://markjs.io#mark
+  element: "span",
+  className: "marked",
+  accuracy: "exactly"
+};
 var highlightIndex = 0, highlightCount = 0;
 
 $("#search-result .help-text").show();
@@ -22,18 +28,16 @@ var issueHighlighter = function(event) {
 
     var keyphrases = $selected.data("keyphrases").split(",");
     if ( !$selected.hasClass("active") ) {
-      keyphrases.forEach(function(keyphrase) {
-        $(".etherpad").highlight(keyphrase);
-      });
+      $(".etherpad").mark(keyphrases,MARK_OPTIONS);
     }
     $selected.addClass("active");
 
     // hide etherpads with no match and show etherpads with matches
     $(".etherpad").hide();
-    $(".highlight").parents(".etherpad").show();
+    $(".marked").parents(".etherpad").show();
 
     // scroll to the first match
-    var newPosition = getScrollPosition($(".highlight").eq(0));
+    var newPosition = getScrollPosition($(".marked").eq(0));
     $("html, body").animate({
       scrollTop: newPosition
     });
@@ -48,7 +52,7 @@ function scrollToHighlight(highlightIndex) {
   // todo display 1 of ...
   var highlightCurrent = highlightIndex + 1;
   $("#match-index").text(highlightCurrent);
-  var newPosition = getScrollPosition($(".highlight").eq(highlightIndex));
+  var newPosition = getScrollPosition($(".marked").eq(highlightIndex));
   $("html, body").animate({
     scrollTop: newPosition
   }, 600);      
@@ -69,7 +73,7 @@ $("#reset").on('click', function() {
 function resetHighlight() {
   // clear previously highlighted
   $(".issue a.active").removeClass("active");
-  $(".etherpad").removeHighlight();
+  $(".etherpad").unmark();
   // scroll to page top
   $("html, body").animate({
     scrollTop: 0
@@ -81,7 +85,7 @@ function resetHighlight() {
 
 function updateNumOfMatches() {
   highlightIndex = 0; 
-  var highlightLength = $(".highlight").length;
+  var highlightLength = $(".marked").length;
   highlightCount = highlightLength - 1;
   // update num of matches
   $("#match-num-found").text(highlightLength);
@@ -89,7 +93,7 @@ function updateNumOfMatches() {
   // toggle status and help-text accordingly
   $("#search-result .help-text").hide();
   $("#search-result .status").show();
-  // nav hightlights
+  // nav highlights
   var highlightCurrent = highlightIndex + 1;
   $("#match-index").text(highlightCurrent);
 }
