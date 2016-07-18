@@ -11,41 +11,29 @@ $("#search-result .help-text").show();
 $("#search-result .status").hide();
 $("#etherpad-num-found").text($(".etherpad:visible").length);
 
-// $(".scanner-mask").hide();
-
 var issueHighlighter = function(event) {
-  // $("#etherpads-container .scanner").remove();
-  // $("#etherpads-container").prepend("<div class='scanner'></div>");
-  // $(".scanner-mask").show();
 
   var $selected = $(this);
+  resetHighlight();
 
-  // wait for scanning animation to finish first
-  setTimeout(function(){
-    // $(".scanner-mask").hide();
+  var keyphrases = $selected.data("keyphrases").split(",");
+  if ( !$selected.hasClass("active") ) {
+    $(".etherpad").mark(keyphrases,MARK_OPTIONS);
+  }
+  $selected.addClass("active");
 
-    resetHighlight();
+  // hide etherpads with no match and show etherpads with matches
+  $(".etherpad").hide();
+  $(".marked").parents(".etherpad").show();
 
-    var keyphrases = $selected.data("keyphrases").split(",");
-    if ( !$selected.hasClass("active") ) {
-      $(".etherpad").mark(keyphrases,MARK_OPTIONS);
-    }
-    $selected.addClass("active");
+  // scroll to the first match
+  var newPosition = getScrollPosition($(".marked").eq(0));
+  $("html, body").animate({
+    scrollTop: newPosition
+  });
 
-    // hide etherpads with no match and show etherpads with matches
-    $(".etherpad").hide();
-    $(".marked").parents(".etherpad").show();
-
-    // scroll to the first match
-    var newPosition = getScrollPosition($(".marked").eq(0));
-    $("html, body").animate({
-      scrollTop: newPosition
-    });
-
-    // update num of matches
-    updateNumOfMatches();
-
-  }, 200);
+  // update num of matches
+  updateNumOfMatches();
 };
 
 function scrollToHighlight(highlightIndex) {

@@ -137,49 +137,7 @@ $highlight-orange: adjust-hue($orange, 25);
   margin-left: $etherpads-container-gap-width;
   padding-top: 80px;
   word-wrap: break-word;
-/* 
-  .scanner {
-    position: fixed;
-    top: $container-padding * 2;
-    right: 0;
-    content: "";
-    height: 1.5rem;
-    width: calc( 100% - ( 450px + 2rem *2)); // 100% - $etherpads-container-gap-width
-    background: green;
-    filter: blur(5px);
-    visibility: hidden;
-    z-index: 1000000;
-    animation-duration: 1s;
-    animation-name: scan-down;
-    animation-iteration-count: 1;
-  }
-
-  .scanner-mask {
-    position: absolute;
-    left: 0;
-    background: $black;
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-  } 
-*/
 }
-
-/*
-@keyframes scan-down {
-  from {
-    visibility: visible;
-    opacity: 1;
-    top: $container-padding * 2;
-  }
-
-  to {
-    visibility: hidden;
-    opacity: 0;
-    top: 1200px;
-  }
-}
-*/
 
 .etherpad {
   /* padding: $container-padding; */
