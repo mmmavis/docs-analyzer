@@ -3,6 +3,7 @@ var MARK_OPTIONS = {
   // see docs on https://markjs.io#mark
   element: "span",
   className: "marked",
+  separateWordSearch: false,
   accuracy: "exactly"
 };
 var highlightIndex = 0, highlightCount = 0;
